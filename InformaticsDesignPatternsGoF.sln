@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Furniture", "InformaticsDes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architecture", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Architecture\Architecture.csproj", "{EEEB30BF-2D2D-4591-AD52-B1748AEBD938}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Recipes\Recipes.csproj", "{A46F0DF1-7960-4A95-8CA2-70A310E28D1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{EEEB30BF-2D2D-4591-AD52-B1748AEBD938}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEEB30BF-2D2D-4591-AD52-B1748AEBD938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEEB30BF-2D2D-4591-AD52-B1748AEBD938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46F0DF1-7960-4A95-8CA2-70A310E28D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46F0DF1-7960-4A95-8CA2-70A310E28D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46F0DF1-7960-4A95-8CA2-70A310E28D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46F0DF1-7960-4A95-8CA2-70A310E28D1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{AB183964-E8DF-4E20-917F-260B6EA74311} = {6F3933D9-9960-49E1-8FBE-207716099129}
 		{F29EFF45-E76E-49C5-8418-A394260D5FB6} = {6F3933D9-9960-49E1-8FBE-207716099129}
 		{EEEB30BF-2D2D-4591-AD52-B1748AEBD938} = {6F3933D9-9960-49E1-8FBE-207716099129}
+		{A46F0DF1-7960-4A95-8CA2-70A310E28D1A} = {6F3933D9-9960-49E1-8FBE-207716099129}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}

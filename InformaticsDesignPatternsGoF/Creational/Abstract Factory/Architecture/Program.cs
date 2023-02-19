@@ -45,7 +45,7 @@ namespace Architecture
 
             public override Style CreateVictorianEraStyleObject()
             {
-                throw new NotImplementedException();
+                return new VictorianEraShip();
             }
         }
 
@@ -63,7 +63,7 @@ namespace Architecture
 
             public override Style CreateVictorianEraStyleObject()
             {
-                throw new NotImplementedException();
+                return new VictorianEraClothing();
             }
         }
 
@@ -144,6 +144,32 @@ namespace Architecture
             }
         }
 
+        public class Era
+        {
+            private Style _styleObject;
+
+            public Era(StylesFactory stylesFactory, char era)
+            {
+                switch (era)
+                {
+                    case 'M':
+                        _styleObject = stylesFactory.CreateMedievalStyleObject();
+                        break;
+                    case 'R':
+                        _styleObject = stylesFactory.CreateRenaissanceStyleObject();
+                        break;
+                    case 'V':
+                        _styleObject = stylesFactory.CreateVictorianEraStyleObject();
+                        break;
+                }
+            }
+
+            public void Info()
+            {
+                _styleObject.ShowDetails();
+            }
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Please select your object type:");
@@ -189,6 +215,40 @@ namespace Architecture
                     styleObject.ShowDetails();
                 }
             }
+
+            // alternative
+
+            Console.WriteLine("Please select your object type:");
+            Console.WriteLine("[H]House, [S]Ship, [C]Clothing");
+
+            char objType = Console.ReadKey().KeyChar;
+
+            Console.WriteLine();
+
+            StylesFactory factory = null;
+
+            switch (objType) 
+            {
+                case 'H':
+                     factory = new HouseFactory();
+                     break;
+                case 'S':
+                     factory = new ShipFactory();
+                     break;
+                case 'C':
+                     factory = new ClothingFactory();
+                     break;
+            }
+
+            Console.WriteLine("Enter era name: ");
+            Console.WriteLine("[M]Medieval, [R]Renaissance, [V]Victorian Era");
+
+            char eraCharacter = Console.ReadKey().KeyChar;
+
+            Console.WriteLine();
+
+            Era era = new Era(factory, eraCharacter);
+            era.Info();
         }
     }
 }
