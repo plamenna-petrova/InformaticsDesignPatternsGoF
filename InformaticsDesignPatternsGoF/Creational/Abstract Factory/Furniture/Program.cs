@@ -1,75 +1,9 @@
-﻿using System;
+﻿using Furniture.ConcreteFactories;
+using Furniture.Interfaces;
+using System;
 
 namespace Furniture
 {
-    public interface IFurnitureFactory
-    {
-        IFurniture CreateCabinet();
-
-        IFurniture CreateChair();
-
-        IFurniture CreateDiningTable();
-    }
-
-    public interface IFurniture
-    {
-        void ShowFurnitureStyle();
-    }
-
-    public class ClassicFurnitureFactory : IFurnitureFactory
-    {
-        public IFurniture CreateCabinet()
-        {
-            return new ClassicCabinet();
-        }
-
-        public IFurniture CreateChair()
-        {
-            return new ClassicChair();
-        }
-
-        public IFurniture CreateDiningTable()
-        {
-            return new ClassicDiningTable();
-        }
-    }
-
-    public class ContemporaryFurnitureFactory : IFurnitureFactory
-    {
-        public IFurniture CreateCabinet()
-        {
-            return new ContemporaryCabinet();
-        }
-
-        public IFurniture CreateChair()
-        {
-            return new ContemporaryChair();
-        }
-
-        public IFurniture CreateDiningTable()
-        {
-            return new ContemporaryDiningTable();
-        }
-    }
-
-    public class ScandinavianFurnitureFactory : IFurnitureFactory
-    {
-        public IFurniture CreateCabinet()
-        {
-            return new ScandinavianCabinet();
-        }
-
-        public IFurniture CreateChair()
-        {
-            return new ScandinavianChair();
-        }
-
-        public IFurniture CreateDiningTable()
-        {
-            return new ScandinavianDiningTable();
-        }
-    }
-
     public class ClassicCabinet : IFurniture
     {
         public void ShowFurnitureStyle()

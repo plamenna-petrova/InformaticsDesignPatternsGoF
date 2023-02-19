@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EraStyles.Products
 {
-    public class VictorianClothing : Style
+    public class VictorianClothing : EraObject
     {
         public override void ShowDetails()
         {

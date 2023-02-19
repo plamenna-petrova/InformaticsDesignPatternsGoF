@@ -6,19 +6,19 @@ using System.Text;
 
 namespace EraStyles.ConcreteFactories
 {
-    public class ClothingFactory : StylesFactory
+    public class ClothingFactory : EraObjectStylesFactory
     {
-        public override Style CreateMedievalStyleObject()
+        public override EraObject CreateMedievalStyleObject()
         {
             return new MedievalClothing();
         }
 
-        public override Style CreateRenaissanceStyleObject()
+        public override EraObject CreateRenaissanceStyleObject()
         {
             return new RenaissanceClothing();
         }
 
-        public override Style CreateVictorianEraStyleObject()
+        public override EraObject CreateVictorianEraStyleObject()
         {
             return new VictorianClothing();
         }

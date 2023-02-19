@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EraStyles.Abstraction
 {
-    public abstract class Style
+    public abstract class EraObject
     {
         public abstract void ShowDetails();
     }

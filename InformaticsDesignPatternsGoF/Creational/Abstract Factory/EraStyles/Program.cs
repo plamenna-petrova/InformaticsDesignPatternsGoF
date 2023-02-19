@@ -14,7 +14,7 @@ namespace EraStyles
 
             if (int.TryParse(Console.ReadLine(), out int objectType))
             {
-                StylesFactory stylesFactory = null;
+                EraObjectStylesFactory stylesFactory = null;
 
                 switch (objectType)
                 {
@@ -34,22 +34,22 @@ namespace EraStyles
 
                 if (int.TryParse(Console.ReadLine(), out int eraStyle))
                 {
-                    Style styleObject = null;
+                    EraObject eraObject = null;
 
                     switch (eraStyle)
                     {
                         case 1:
-                            styleObject = stylesFactory.CreateMedievalStyleObject();
+                            eraObject = stylesFactory.CreateMedievalStyleObject();
                             break;
                         case 2:
-                            styleObject = stylesFactory.CreateRenaissanceStyleObject();
+                            eraObject = stylesFactory.CreateRenaissanceStyleObject();
                             break;
                         case 3:
-                            styleObject = stylesFactory.CreateVictorianEraStyleObject();
+                            eraObject = stylesFactory.CreateVictorianEraStyleObject();
                             break;
                     }
 
-                    styleObject.ShowDetails();
+                    eraObject.ShowDetails();
                 }
             }
 
@@ -62,7 +62,7 @@ namespace EraStyles
 
             Console.WriteLine();
 
-            StylesFactory factory = null;
+            EraObjectStylesFactory factory = null;
 
             switch (objType)
             {

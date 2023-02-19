@@ -7,27 +7,27 @@ namespace EraStyles.Client
 {
     public class Era
     {
-        private Style _styleObject;
+        private EraObject _eraObject;
 
-        public Era(StylesFactory stylesFactory, char era)
+        public Era(EraObjectStylesFactory stylesFactory, char era)
         {
             switch (era)
             {
                 case 'M':
-                    _styleObject = stylesFactory.CreateMedievalStyleObject();
+                    _eraObject = stylesFactory.CreateMedievalStyleObject();
                     break;
                 case 'R':
-                    _styleObject = stylesFactory.CreateRenaissanceStyleObject();
+                    _eraObject = stylesFactory.CreateRenaissanceStyleObject();
                     break;
                 case 'V':
-                    _styleObject = stylesFactory.CreateVictorianEraStyleObject();
+                    _eraObject = stylesFactory.CreateVictorianEraStyleObject();
                     break;
             }
         }
 
         public void Info()
         {
-            _styleObject.ShowDetails();
+            _eraObject.ShowDetails();
         }
     }
 }
