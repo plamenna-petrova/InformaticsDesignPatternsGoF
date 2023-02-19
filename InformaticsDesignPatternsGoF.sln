@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "Informat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documents", "InformaticsDesignPatternsGoF\Creational\Factory\Documents\Documents.csproj", "{2F24E52F-D5FE-405C-B391-942B2553D4FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCards", "InformaticsDesignPatternsGoF\Creational\Factory\CreditCards\CreditCards.csproj", "{865A60E5-23C6-450F-9E33-CFBC479D078C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{2F24E52F-D5FE-405C-B391-942B2553D4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F24E52F-D5FE-405C-B391-942B2553D4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F24E52F-D5FE-405C-B391-942B2553D4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865A60E5-23C6-450F-9E33-CFBC479D078C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865A60E5-23C6-450F-9E33-CFBC479D078C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865A60E5-23C6-450F-9E33-CFBC479D078C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865A60E5-23C6-450F-9E33-CFBC479D078C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{1B09E287-ACD2-47CA-AD52-79A9CC379DDA} = {23450D02-1B92-41F9-A215-752D61C4160B}
 		{7681F96A-03AD-4A06-B276-A651A576FE4E} = {1B09E287-ACD2-47CA-AD52-79A9CC379DDA}
 		{2F24E52F-D5FE-405C-B391-942B2553D4FD} = {1B09E287-ACD2-47CA-AD52-79A9CC379DDA}
+		{865A60E5-23C6-450F-9E33-CFBC479D078C} = {1B09E287-ACD2-47CA-AD52-79A9CC379DDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
