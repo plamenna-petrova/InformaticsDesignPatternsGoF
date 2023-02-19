@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{23450D02-1B92-41F9-A215-752D61C4160B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstract Factory", "Abstract Factory", "{6F3933D9-9960-49E1-8FBE-207716099129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Structural Code\Structural Code.csproj", "{0A447AF0-7180-4969-ADFE-8A6752D3CA71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal World", "InformaticsDesignPatternsGoF\Creational\Animal World\Animal World.csproj", "{D55E07D1-8D68-4427-AE08-8667C6BDDC87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A447AF0-7180-4969-ADFE-8A6752D3CA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A447AF0-7180-4969-ADFE-8A6752D3CA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A447AF0-7180-4969-ADFE-8A6752D3CA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A447AF0-7180-4969-ADFE-8A6752D3CA71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55E07D1-8D68-4427-AE08-8667C6BDDC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55E07D1-8D68-4427-AE08-8667C6BDDC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55E07D1-8D68-4427-AE08-8667C6BDDC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55E07D1-8D68-4427-AE08-8667C6BDDC87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F3933D9-9960-49E1-8FBE-207716099129} = {23450D02-1B92-41F9-A215-752D61C4160B}
+		{0A447AF0-7180-4969-ADFE-8A6752D3CA71} = {6F3933D9-9960-49E1-8FBE-207716099129}
+		{D55E07D1-8D68-4427-AE08-8667C6BDDC87} = {6F3933D9-9960-49E1-8FBE-207716099129}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
+	EndGlobalSection
+EndGlobal
