@@ -9,21 +9,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstract Factory", "Abstrac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Structural Code\Structural Code.csproj", "{0A447AF0-7180-4969-ADFE-8A6752D3CA71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal World", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Animal World\Animal World.csproj", "{AB183964-E8DF-4E20-917F-260B6EA74311}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animal World", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Animal World\Animal World.csproj", "{AB183964-E8DF-4E20-917F-260B6EA74311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Furniture", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Furniture\Furniture.csproj", "{F29EFF45-E76E-49C5-8418-A394260D5FB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Furniture", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Furniture\Furniture.csproj", "{F29EFF45-E76E-49C5-8418-A394260D5FB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Recipes\Recipes.csproj", "{A46F0DF1-7960-4A95-8CA2-70A310E28D1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recipes", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\Recipes\Recipes.csproj", "{A46F0DF1-7960-4A95-8CA2-70A310E28D1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EraStyles", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\EraStyles\EraStyles.csproj", "{8A897270-3852-4224-9795-29E8D5CF91A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EraStyles", "InformaticsDesignPatternsGoF\Creational\Abstract Factory\EraStyles\EraStyles.csproj", "{8A897270-3852-4224-9795-29E8D5CF91A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory", "Factory", "{1B09E287-ACD2-47CA-AD52-79A9CC379DDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Factory\Structural Code\Structural Code.csproj", "{7681F96A-03AD-4A06-B276-A651A576FE4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Factory\Structural Code\Structural Code.csproj", "{7681F96A-03AD-4A06-B276-A651A576FE4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documents", "InformaticsDesignPatternsGoF\Creational\Factory\Documents\Documents.csproj", "{2F24E52F-D5FE-405C-B391-942B2553D4FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Documents", "InformaticsDesignPatternsGoF\Creational\Factory\Documents\Documents.csproj", "{2F24E52F-D5FE-405C-B391-942B2553D4FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCards", "InformaticsDesignPatternsGoF\Creational\Factory\CreditCards\CreditCards.csproj", "{865A60E5-23C6-450F-9E33-CFBC479D078C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCards", "InformaticsDesignPatternsGoF\Creational\Factory\CreditCards\CreditCards.csproj", "{865A60E5-23C6-450F-9E33-CFBC479D078C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Air Conditioners", "InformaticsDesignPatternsGoF\Creational\Factory\Air Conditioners\Air Conditioners.csproj", "{4DFF37E9-38A4-4F40-A464-54041333B435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{865A60E5-23C6-450F-9E33-CFBC479D078C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{865A60E5-23C6-450F-9E33-CFBC479D078C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{865A60E5-23C6-450F-9E33-CFBC479D078C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFF37E9-38A4-4F40-A464-54041333B435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFF37E9-38A4-4F40-A464-54041333B435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFF37E9-38A4-4F40-A464-54041333B435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFF37E9-38A4-4F40-A464-54041333B435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{7681F96A-03AD-4A06-B276-A651A576FE4E} = {1B09E287-ACD2-47CA-AD52-79A9CC379DDA}
 		{2F24E52F-D5FE-405C-B391-942B2553D4FD} = {1B09E287-ACD2-47CA-AD52-79A9CC379DDA}
 		{865A60E5-23C6-450F-9E33-CFBC479D078C} = {1B09E287-ACD2-47CA-AD52-79A9CC379DDA}
+		{4DFF37E9-38A4-4F40-A464-54041333B435} = {1B09E287-ACD2-47CA-AD52-79A9CC379DDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}

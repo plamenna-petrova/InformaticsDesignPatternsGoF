@@ -8,8 +8,6 @@ namespace CreditCards.Creators
     public class PlatinumCreator : ICreditCardCreator
     {
         public CreditCard CreateCreditCard(string model, decimal limit, decimal annualCharge)
-        {
-            return new Platinum(model, limit, annualCharge);
-        }
+            => new Platinum(model, limit, annualCharge);
     }
 }
