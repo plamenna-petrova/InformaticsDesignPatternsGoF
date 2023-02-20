@@ -80,57 +80,49 @@ namespace Furniture
     {
         static void Main(string[] args)
         {
-            int style;
+            Console.WriteLine("Please select your furniture style:");
+            Console.WriteLine("[1]Classic, [2]Contemporary, [3]Scandinavian");
 
-            do
+            if (int.TryParse(Console.ReadLine(), out int furnitureStyle))
             {
-                Console.WriteLine("Please select your furniture style:");
-                Console.WriteLine("[1]Classic, [2]Contemporary, [3]Scandinavian");
-                int.TryParse(Console.ReadLine(), out style);
-            }
-            while (style == 0 || style > 3);
+                IFurnitureFactory furnitureFactory = null;
 
-            IFurnitureFactory furnitureFactory = null;
+                switch (furnitureStyle)
+                {
+                    case 1:
+                        furnitureFactory = new ClassicFurnitureFactory();
+                        break;
+                    case 2:
+                        furnitureFactory = new ContemporaryFurnitureFactory();
+                        break;
+                    case 3:
+                        furnitureFactory = new ScandinavianFurnitureFactory();
+                        break;
+                }
 
-            switch (style)
-            {
-                case 1:
-                    furnitureFactory = new ClassicFurnitureFactory();
-                    break;
-                case 2:
-                    furnitureFactory = new ContemporaryFurnitureFactory();
-                    break;
-                case 3:
-                    furnitureFactory = new ScandinavianFurnitureFactory();
-                    break;
-            }
-
-            int furnitureType;
-
-            do
-            {
                 Console.WriteLine("Please select your furniture type:");
                 Console.WriteLine("[1]Cabinet, [2]Chair, [3]Dining Table");
-                int.TryParse(Console.ReadLine(), out furnitureType);
+
+                if (int.TryParse(Console.ReadLine(), out int furnitureType))
+                {
+                    IFurniture furniture = null;
+
+                    switch (furnitureType)
+                    {
+                        case 1:
+                            furniture = furnitureFactory.CreateCabinet();
+                            break;
+                        case 2:
+                            furniture = furnitureFactory.CreateChair();
+                            break;
+                        case 3:
+                            furniture = furnitureFactory.CreateDiningTable();
+                            break;
+                    }
+
+                    furniture.ShowFurnitureStyle();
+                }
             }
-            while (furnitureType == 0 || furnitureType > 3);
-
-            IFurniture furniture = null;
-
-            switch (furnitureType) 
-            {
-                case 1:
-                    furniture = furnitureFactory.CreateCabinet();
-                    break;
-                case 2:
-                    furniture = furnitureFactory.CreateChair();
-                    break;
-                case 3:
-                    furniture = furnitureFactory.CreateDiningTable();
-                    break;
-            }
-
-            furniture.ShowFurnitureStyle();
         }
     }
 }

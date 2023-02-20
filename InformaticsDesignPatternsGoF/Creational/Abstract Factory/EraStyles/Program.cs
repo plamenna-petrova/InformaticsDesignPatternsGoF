@@ -55,37 +55,56 @@ namespace EraStyles
 
             // alternative
 
-            Console.WriteLine("Please select your object type:");
+            Console.WriteLine(new string('-', 50));
+
+            int objectsCount = 1;
+
+            Console.WriteLine($"Please select your object type number: {objectsCount}");
             Console.WriteLine("[H]House, [S]Ship, [C]Clothing");
 
             char objType = Console.ReadKey().KeyChar;
 
             Console.WriteLine();
 
-            EraObjectStylesFactory factory = null;
-
-            switch (objType)
+            while (objectType != 'E')
             {
-                case 'H':
-                    factory = new HouseFactory();
-                    break;
-                case 'S':
-                    factory = new ShipFactory();
-                    break;
-                case 'C':
-                    factory = new ClothingFactory();
-                    break;
+                EraObjectStylesFactory factory = null;
+
+                switch (objType)
+                {
+                    case 'H':
+                        factory = new HouseFactory();
+                        break;
+                    case 'S':
+                        factory = new ShipFactory();
+                        break;
+                    case 'C':
+                        factory = new ClothingFactory();
+                        break;
+                }
+
+                Console.WriteLine("Enter era name: ");
+                Console.WriteLine("[M]Medieval, [R]Renaissance, [V]Victorian Era");
+
+                char eraCharacter = Console.ReadKey().KeyChar;
+
+                Console.WriteLine();
+
+                Era era = new Era(factory, eraCharacter); 
+                Console.Write($"Object Number #{objectsCount} ");
+                era.Info();
+
+                Console.WriteLine(new string('-', 50));
+
+                Console.WriteLine($"Please select your object type: {++objectsCount}");
+                Console.WriteLine("[H]House, [S]Ship, [C]Clothing");
+
+                objType = Console.ReadKey().KeyChar;
+
+                Console.WriteLine();
             }
 
-            Console.WriteLine("Enter era name: ");
-            Console.WriteLine("[M]Medieval, [R]Renaissance, [V]Victorian Era");
-
-            char eraCharacter = Console.ReadKey().KeyChar;
-
-            Console.WriteLine();
-
-            Era era = new Era(factory, eraCharacter);
-            era.Info();
+            Console.ReadKey();
         }
     }
 }
