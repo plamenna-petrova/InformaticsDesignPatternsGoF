@@ -55,7 +55,7 @@ namespace Documents
             CreatePages();
         }
 
-        public List<Page> Pages { get; } = new List<Page>();
+        public List<Page> Pages { get; private set; } = new List<Page>();
 
         public abstract void CreatePages();
     }

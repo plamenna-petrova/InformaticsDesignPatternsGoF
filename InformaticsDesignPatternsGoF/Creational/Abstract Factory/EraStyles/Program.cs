@@ -9,60 +9,12 @@ namespace EraStyles
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please select your object type:");
-            Console.WriteLine("[1]House, [2]Ship, [3]Clothing");
-
-            if (int.TryParse(Console.ReadLine(), out int objectType))
-            {
-                EraObjectStylesFactory stylesFactory = null;
-
-                switch (objectType)
-                {
-                    case 1:
-                        stylesFactory = new HouseFactory();
-                        break;
-                    case 2:
-                        stylesFactory = new ShipFactory();
-                        break;
-                    case 3:
-                        stylesFactory = new ClothingFactory();
-                        break;
-                }
-
-                Console.WriteLine("Please select your object style:");
-                Console.WriteLine("[1]Medieval, [2]Renaissance, [3]Victorian Era");
-
-                if (int.TryParse(Console.ReadLine(), out int eraStyle))
-                {
-                    EraObject eraObject = null;
-
-                    switch (eraStyle)
-                    {
-                        case 1:
-                            eraObject = stylesFactory.CreateMedievalStyleObject();
-                            break;
-                        case 2:
-                            eraObject = stylesFactory.CreateRenaissanceStyleObject();
-                            break;
-                        case 3:
-                            eraObject = stylesFactory.CreateVictorianEraStyleObject();
-                            break;
-                    }
-
-                    eraObject.ShowDetails();
-                }
-            }
-
-            // alternative
-
-            Console.WriteLine(new string('-', 50));
-
             int objectsCount = 1;
 
             Console.WriteLine($"Please select your object type number: {objectsCount}");
             Console.WriteLine("[H]House, [S]Ship, [C]Clothing");
 
-            char objType = Console.ReadKey().KeyChar;
+            char objectType = Console.ReadKey().KeyChar;
 
             Console.WriteLine();
 
@@ -70,7 +22,7 @@ namespace EraStyles
             {
                 EraObjectStylesFactory factory = null;
 
-                switch (objType)
+                switch (objectType)
                 {
                     case 'H':
                         factory = new HouseFactory();
@@ -99,7 +51,7 @@ namespace EraStyles
                 Console.WriteLine($"Please select your object type: {++objectsCount}");
                 Console.WriteLine("[H]House, [S]Ship, [C]Clothing");
 
-                objType = Console.ReadKey().KeyChar;
+                objectType = Console.ReadKey().KeyChar;
 
                 Console.WriteLine();
             }

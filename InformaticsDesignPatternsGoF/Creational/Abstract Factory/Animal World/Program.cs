@@ -91,6 +91,7 @@ namespace Animal_World
             _carnivore.Eat(_herbivore);
         }
     }
+
     public class Program
     {
         static void Main(string[] args)
