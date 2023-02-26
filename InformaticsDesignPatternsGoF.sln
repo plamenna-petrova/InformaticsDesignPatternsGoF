@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{8462
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Builder\Structural Code\Structural Code.csproj", "{A2963F1E-0EF9-447E-AA5F-C8D692C1C342}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "InformaticsDesignPatternsGoF\Creational\Builder\Vehicles\Vehicles.csproj", "{378EBD73-3322-4205-ACD2-0D0751C00419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{A2963F1E-0EF9-447E-AA5F-C8D692C1C342}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2963F1E-0EF9-447E-AA5F-C8D692C1C342}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2963F1E-0EF9-447E-AA5F-C8D692C1C342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{378EBD73-3322-4205-ACD2-0D0751C00419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378EBD73-3322-4205-ACD2-0D0751C00419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378EBD73-3322-4205-ACD2-0D0751C00419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378EBD73-3322-4205-ACD2-0D0751C00419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{4DFF37E9-38A4-4F40-A464-54041333B435} = {1B09E287-ACD2-47CA-AD52-79A9CC379DDA}
 		{84623C40-4AF3-4E4B-9DDA-CC747328E19B} = {23450D02-1B92-41F9-A215-752D61C4160B}
 		{A2963F1E-0EF9-447E-AA5F-C8D692C1C342} = {84623C40-4AF3-4E4B-9DDA-CC747328E19B}
+		{378EBD73-3322-4205-ACD2-0D0751C00419} = {84623C40-4AF3-4E4B-9DDA-CC747328E19B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
