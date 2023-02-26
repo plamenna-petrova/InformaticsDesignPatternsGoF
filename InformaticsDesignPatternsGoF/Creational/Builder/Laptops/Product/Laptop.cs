@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Laptops.Product
@@ -37,12 +38,7 @@ namespace Laptops.Product
             stringBuilder.AppendLine($"SSD Type: {SSDType}");
             stringBuilder.AppendLine($"SSD Capacity: {SSDCapacity} TB");
             stringBuilder.AppendLine($"Extras: ");
-
-            Extras.ForEach(extraItem =>
-            {
-                stringBuilder.AppendLine($"{new string('-', 2)} {extraItem}");
-            });
-
+            stringBuilder.AppendLine(string.Join('\n', Extras.Select((e, i) => $"Exta #{i+1}: {e}")));
             stringBuilder.AppendLine(new string('-', 40));
             Console.WriteLine(stringBuilder.ToString());
         }
