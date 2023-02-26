@@ -31,11 +31,11 @@ namespace Product_Stock
 
     public interface IProductStockReportBuilder
     {
-        void BuildHeader();
+        IProductStockReportBuilder BuildHeader();
 
-        void BuildBody();   
+        IProductStockReportBuilder BuildBody();   
        
-        void BuildFooter();
+        IProductStockReportBuilder BuildFooter();
 
         ProductsStockReport GetProductsStockReport();
     }
@@ -52,19 +52,22 @@ namespace Product_Stock
             productsStockReport = new ProductsStockReport();
         }
 
-        public void BuildHeader()
+        public IProductStockReportBuilder BuildHeader()
         {
             productsStockReport.HeaderPart = $"STOCK REPORT FOR ALL THE PRODUCTS ON DATE: {DateTime.Now}\n";
+            return this;
         }
 
-        public void BuildBody()
+        public IProductStockReportBuilder BuildBody()
         {
             productsStockReport.BodyPart = string.Join(Environment.NewLine, products.Select(p => $"Product name: {p.Name}, product price: {p.Price}"));
+            return this;
         }
 
-        public void BuildFooter()
+        public IProductStockReportBuilder BuildFooter()
         {
             productsStockReport.FooterPart = "\nReport, provided by the SAMPLE_PRODUCTS company";
+            return this;
         }
 
         public ProductsStockReport GetProductsStockReport()
@@ -84,9 +87,10 @@ namespace Product_Stock
 
         public void BuildStockReport()
         {
-            productStockReportBuilder.BuildHeader();
-            productStockReportBuilder.BuildBody();
-            productStockReportBuilder.BuildFooter();
+            productStockReportBuilder
+                .BuildHeader()
+                .BuildBody()
+                .BuildFooter();
         }
     }
 
