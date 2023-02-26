@@ -17,6 +17,7 @@ namespace Laptops.Director
             laptopBuilder.SetDisplayType();
             laptopBuilder.SetSSDType();
             laptopBuilder.SetSSDCapacity();
+            laptopBuilder.SetExtras();
         }
     }
 }

@@ -24,5 +24,7 @@ namespace Laptops.Builder
         public abstract void SetSSDType();
 
         public abstract void SetSSDCapacity();
+
+        public abstract void SetExtras();
     }
 }

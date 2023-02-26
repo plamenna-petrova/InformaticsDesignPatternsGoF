@@ -22,6 +22,8 @@ namespace Laptops.Product
 
         public int SSDCapacity { get; set; }
 
+        public List<string> Extras { get; set; } = new List<string>();
+
         public void ShowDetails()
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -34,6 +36,13 @@ namespace Laptops.Product
             stringBuilder.AppendLine($"Display Type: {DisplayType}");
             stringBuilder.AppendLine($"SSD Type: {SSDType}");
             stringBuilder.AppendLine($"SSD Capacity: {SSDCapacity} TB");
+            stringBuilder.AppendLine($"Extras: ");
+
+            Extras.ForEach(extraItem =>
+            {
+                stringBuilder.AppendLine($"{new string('-', 2)} {extraItem}");
+            });
+
             stringBuilder.AppendLine(new string('-', 40));
             Console.WriteLine(stringBuilder.ToString());
         }

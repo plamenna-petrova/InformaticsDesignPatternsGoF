@@ -60,5 +60,18 @@ namespace Laptops.ConcreteBuilders
             Console.Write("Enter SSD Capacity: ");
             Laptop.SSDCapacity = int.Parse(Console.ReadLine());
         }
+
+        public override void SetExtras()
+        {
+            Console.Write("Add extra item: (Exit with END)");
+            string extraItem = Console.ReadLine();
+
+            while (extraItem != "END")
+            {
+                Laptop.Extras.Add(extraItem);
+                Console.Write("Add extra item: (Exit with END)");
+                extraItem = Console.ReadLine();
+            }
+        }
     }
 }
