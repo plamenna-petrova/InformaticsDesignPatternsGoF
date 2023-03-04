@@ -9,6 +9,13 @@ namespace Vehicles
 
         private Dictionary<string, string> parts = new Dictionary<string, string>();
 
+        //private Dictionary<string, string> vehicleParts = new Dictionary<string, string> 
+        //{
+        //    { "frame", "Vehicle Frmae" },
+        //    { "engine", "150 cc" },
+        //    { "doors", "0" }
+        //};
+
         public Vehicle(string vehicleType)
         {
             this.vehicleType = vehicleType;

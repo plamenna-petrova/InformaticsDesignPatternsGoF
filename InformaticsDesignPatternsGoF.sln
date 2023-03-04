@@ -29,15 +29,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Air Conditioners", "Informa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{84623C40-4AF3-4E4B-9DDA-CC747328E19B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Builder\Structural Code\Structural Code.csproj", "{A2963F1E-0EF9-447E-AA5F-C8D692C1C342}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Builder\Structural Code\Structural Code.csproj", "{A2963F1E-0EF9-447E-AA5F-C8D692C1C342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "InformaticsDesignPatternsGoF\Creational\Builder\Vehicles\Vehicles.csproj", "{378EBD73-3322-4205-ACD2-0D0751C00419}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicles", "InformaticsDesignPatternsGoF\Creational\Builder\Vehicles\Vehicles.csproj", "{378EBD73-3322-4205-ACD2-0D0751C00419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laptops", "InformaticsDesignPatternsGoF\Creational\Builder\Laptops\Laptops.csproj", "{57585593-80CB-4980-9565-FC364038F2CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laptops", "InformaticsDesignPatternsGoF\Creational\Builder\Laptops\Laptops.csproj", "{57585593-80CB-4980-9565-FC364038F2CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizzas", "InformaticsDesignPatternsGoF\Creational\Builder\Pizzas\Pizzas.csproj", "{5F308654-208F-4E15-A857-C545F30EE1AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizzas", "InformaticsDesignPatternsGoF\Creational\Builder\Pizzas\Pizzas.csproj", "{5F308654-208F-4E15-A857-C545F30EE1AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product Stock", "InformaticsDesignPatternsGoF\Creational\Builder\Product Stock\Product Stock.csproj", "{A530807E-EC36-4D16-A4FF-0B66F433D971}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product Stock", "InformaticsDesignPatternsGoF\Creational\Builder\Product Stock\Product Stock.csproj", "{A530807E-EC36-4D16-A4FF-0B66F433D971}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype", "Prototype", "{E5354CFB-A1AB-4096-93E4-CA22E1710B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Prototype\Structural Code\Structural Code.csproj", "{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +105,10 @@ Global
 		{A530807E-EC36-4D16-A4FF-0B66F433D971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A530807E-EC36-4D16-A4FF-0B66F433D971}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A530807E-EC36-4D16-A4FF-0B66F433D971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +131,8 @@ Global
 		{57585593-80CB-4980-9565-FC364038F2CD} = {84623C40-4AF3-4E4B-9DDA-CC747328E19B}
 		{5F308654-208F-4E15-A857-C545F30EE1AA} = {84623C40-4AF3-4E4B-9DDA-CC747328E19B}
 		{A530807E-EC36-4D16-A4FF-0B66F433D971} = {84623C40-4AF3-4E4B-9DDA-CC747328E19B}
+		{E5354CFB-A1AB-4096-93E4-CA22E1710B1C} = {23450D02-1B92-41F9-A215-752D61C4160B}
+		{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6} = {E5354CFB-A1AB-4096-93E4-CA22E1710B1C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
