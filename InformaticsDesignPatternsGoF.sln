@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People Identification", "In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "InformaticsDesignPatternsGoF\Creational\Prototype\Employees\Employees.csproj", "{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{55396295-9F6F-41B6-B575-B1768C19CB63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Singleton\Structural Code\Structural Code.csproj", "{3083F031-14BD-48DD-8AFF-D79249BBA717}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +131,10 @@ Global
 		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3083F031-14BD-48DD-8AFF-D79249BBA717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3083F031-14BD-48DD-8AFF-D79249BBA717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3083F031-14BD-48DD-8AFF-D79249BBA717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3083F031-14BD-48DD-8AFF-D79249BBA717}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +162,8 @@ Global
 		{3CDF86EE-294E-441D-A226-B036B289711C} = {E5354CFB-A1AB-4096-93E4-CA22E1710B1C}
 		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E} = {E5354CFB-A1AB-4096-93E4-CA22E1710B1C}
 		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C} = {E5354CFB-A1AB-4096-93E4-CA22E1710B1C}
+		{55396295-9F6F-41B6-B575-B1768C19CB63} = {23450D02-1B92-41F9-A215-752D61C4160B}
+		{3083F031-14BD-48DD-8AFF-D79249BBA717} = {55396295-9F6F-41B6-B575-B1768C19CB63}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
