@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "Informat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colors", "InformaticsDesignPatternsGoF\Creational\Prototype\Colors\Colors.csproj", "{3CDF86EE-294E-441D-A226-B036B289711C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People Identification", "InformaticsDesignPatternsGoF\Creational\Prototype\People Identification\People Identification.csproj", "{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,10 @@ Global
 		{3CDF86EE-294E-441D-A226-B036B289711C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CDF86EE-294E-441D-A226-B036B289711C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CDF86EE-294E-441D-A226-B036B289711C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
