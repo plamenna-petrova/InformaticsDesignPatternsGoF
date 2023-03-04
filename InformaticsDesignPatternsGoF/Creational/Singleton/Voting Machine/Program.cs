@@ -40,6 +40,22 @@ namespace Voting_Machine
             });
 
             Console.WriteLine($"Total votes: {VotingMachineV2.Instance.TotalVotes}");
+
+            Parallel.ForEach(numbers, i =>
+            {
+                var votingMachineV3 = VotingMachineV3.Instance;
+                votingMachineV3.RegisterVote();
+            });
+
+            Console.WriteLine($"Total votes: {VotingMachineV3.Instance.TotalVotes}");
+
+            Parallel.ForEach(numbers, i =>
+            {
+                var votingMachineV4 = VotingMachineV4.Instance;
+                votingMachineV4.RegisterVote();
+            });
+
+            Console.WriteLine($"Total votes: {VotingMachineV4.Instance.TotalVotes}");
         }
     }
 }
