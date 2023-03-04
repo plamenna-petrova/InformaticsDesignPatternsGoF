@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colors", "InformaticsDesign
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People Identification", "InformaticsDesignPatternsGoF\Creational\Prototype\People Identification\People Identification.csproj", "{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "InformaticsDesignPatternsGoF\Creational\Prototype\Employees\Employees.csproj", "{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +123,10 @@ Global
 		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,8 @@ Global
 		{E5354CFB-A1AB-4096-93E4-CA22E1710B1C} = {23450D02-1B92-41F9-A215-752D61C4160B}
 		{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6} = {E5354CFB-A1AB-4096-93E4-CA22E1710B1C}
 		{3CDF86EE-294E-441D-A226-B036B289711C} = {E5354CFB-A1AB-4096-93E4-CA22E1710B1C}
+		{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E} = {E5354CFB-A1AB-4096-93E4-CA22E1710B1C}
+		{48CFA144-567C-4EAC-B5D3-0BBBB31B166C} = {E5354CFB-A1AB-4096-93E4-CA22E1710B1C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
