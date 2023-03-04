@@ -5,7 +5,7 @@ namespace Load_Balancer
 {
     public class LoadBalancer
     {
-        static LoadBalancer instance;
+        private static LoadBalancer instance;
 
         List<string> servers = new List<string>();
         Random random = new Random();
