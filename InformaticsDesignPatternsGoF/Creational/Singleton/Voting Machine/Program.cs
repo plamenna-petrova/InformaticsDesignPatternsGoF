@@ -14,9 +14,9 @@ namespace Voting_Machine
 
             //for (int i = 0; i < 3; i++)
             //{
-            //    firstVotingMachineV1.RegisterVotes();
-            //    secondVotingMachineV1.RegisterVotes();
-            //    thirdVotingMachineV1.RegisterVotes();
+            //    firstVotingMachineV1.RegisterVote();
+            //    secondVotingMachineV1.RegisterVote();
+            //    thirdVotingMachineV1.RegisterVote();
             //}
 
             //Console.WriteLine($"Total votes: {firstVotingMachineV1.TotalVotes}");
@@ -25,13 +25,21 @@ namespace Voting_Machine
 
             // asynchronous calls
 
+            //Parallel.ForEach(numbers, i =>
+            //{
+            //    var votingMachineV1 = VotingMachineV1.Instance;
+            //    votingMachineV1.RegisterVote();
+            //});
+
+            //Console.WriteLine($"Total votes: {VotingMachineV1.Instance.TotalVotes}");
+
             Parallel.ForEach(numbers, i =>
             {
-                var votingMachine = VotingMachineV1.Instance;
-                votingMachine.RegisterVotes();
+                var votingMachineV2 = VotingMachineV2.Instance;
+                votingMachineV2.RegisterVote();
             });
 
-            Console.WriteLine($"Total votes: {VotingMachineV1.Instance.TotalVotes}");
+            Console.WriteLine($"Total votes: {VotingMachineV2.Instance.TotalVotes}");
         }
     }
 }

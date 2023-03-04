@@ -10,6 +10,11 @@ namespace Voting_Machine
 
         private int totalVotes = 0;
 
+        private VotingMachineV1()
+        {
+
+        }
+
         public static VotingMachineV1 Instance
         {
             get
@@ -23,7 +28,7 @@ namespace Voting_Machine
             }
         }
 
-        public void RegisterVotes()
+        public void RegisterVote()
         {
             totalVotes++;
             Console.WriteLine($"Registered Vote # {totalVotes}");
