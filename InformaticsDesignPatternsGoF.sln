@@ -41,23 +41,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product Stock", "Informatic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype", "Prototype", "{E5354CFB-A1AB-4096-93E4-CA22E1710B1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Prototype\Structural Code\Structural Code.csproj", "{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Prototype\Structural Code\Structural Code.csproj", "{CC84B7BC-AED7-48FC-A4D0-48E04FBAB9F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colors", "InformaticsDesignPatternsGoF\Creational\Prototype\Colors\Colors.csproj", "{3CDF86EE-294E-441D-A226-B036B289711C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Colors", "InformaticsDesignPatternsGoF\Creational\Prototype\Colors\Colors.csproj", "{3CDF86EE-294E-441D-A226-B036B289711C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People Identification", "InformaticsDesignPatternsGoF\Creational\Prototype\People Identification\People Identification.csproj", "{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People Identification", "InformaticsDesignPatternsGoF\Creational\Prototype\People Identification\People Identification.csproj", "{3A21FD2D-C249-44F9-9955-FE24B9FDDE5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "InformaticsDesignPatternsGoF\Creational\Prototype\Employees\Employees.csproj", "{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees", "InformaticsDesignPatternsGoF\Creational\Prototype\Employees\Employees.csproj", "{48CFA144-567C-4EAC-B5D3-0BBBB31B166C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{55396295-9F6F-41B6-B575-B1768C19CB63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Singleton\Structural Code\Structural Code.csproj", "{3083F031-14BD-48DD-8AFF-D79249BBA717}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Singleton\Structural Code\Structural Code.csproj", "{3083F031-14BD-48DD-8AFF-D79249BBA717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Load Balancer", "InformaticsDesignPatternsGoF\Creational\Singleton\Load Balancer\Load Balancer.csproj", "{C4A9FD1A-BD83-4F24-AA74-53C967360005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Load Balancer", "InformaticsDesignPatternsGoF\Creational\Singleton\Load Balancer\Load Balancer.csproj", "{C4A9FD1A-BD83-4F24-AA74-53C967360005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Load Balancer Optimized", "InformaticsDesignPatternsGoF\Creational\Singleton\Load Balancer Optimized\Load Balancer Optimized.csproj", "{AFE30F89-554B-42E0-910E-8B925DEB5EBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Load Balancer Optimized", "InformaticsDesignPatternsGoF\Creational\Singleton\Load Balancer Optimized\Load Balancer Optimized.csproj", "{AFE30F89-554B-42E0-910E-8B925DEB5EBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voting Machine", "InformaticsDesignPatternsGoF\Creational\Singleton\Voting Machine\Voting Machine.csproj", "{A98DD2BF-B05D-4C14-8436-1807C43D9AF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Voting Machine", "InformaticsDesignPatternsGoF\Creational\Singleton\Voting Machine\Voting Machine.csproj", "{A98DD2BF-B05D-4C14-8436-1807C43D9AF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{DAC70262-FC79-4D9C-9955-8078BF234B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Creational\Adapter\Structural Code\Structural Code.csproj", "{21D3E968-9DC5-4905-BAA9-600733A956D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +157,10 @@ Global
 		{A98DD2BF-B05D-4C14-8436-1807C43D9AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A98DD2BF-B05D-4C14-8436-1807C43D9AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A98DD2BF-B05D-4C14-8436-1807C43D9AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D3E968-9DC5-4905-BAA9-600733A956D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D3E968-9DC5-4905-BAA9-600733A956D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D3E968-9DC5-4905-BAA9-600733A956D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D3E968-9DC5-4905-BAA9-600733A956D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -185,6 +193,8 @@ Global
 		{C4A9FD1A-BD83-4F24-AA74-53C967360005} = {55396295-9F6F-41B6-B575-B1768C19CB63}
 		{AFE30F89-554B-42E0-910E-8B925DEB5EBD} = {55396295-9F6F-41B6-B575-B1768C19CB63}
 		{A98DD2BF-B05D-4C14-8436-1807C43D9AF9} = {55396295-9F6F-41B6-B575-B1768C19CB63}
+		{DAC70262-FC79-4D9C-9955-8078BF234B64} = {23450D02-1B92-41F9-A215-752D61C4160B}
+		{21D3E968-9DC5-4905-BAA9-600733A956D9} = {DAC70262-FC79-4D9C-9955-8078BF234B64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
