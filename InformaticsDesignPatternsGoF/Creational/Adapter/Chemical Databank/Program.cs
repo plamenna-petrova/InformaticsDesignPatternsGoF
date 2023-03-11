@@ -35,9 +35,13 @@ namespace Chemical_Databank
             molecularWeight = chemicalDatabank.GetMolecularWeight(chemical);
             molecularFormula = chemicalDatabank.GetMolecularStructure(chemical);
 
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine($"Compound :  {new string('-', 7)} {chemical}")
-                         .AppendLine($" Formula : {molecularFormula}").AppendLine($" Weight : {molecularWeight}").AppendLine($" Melting Point: {meltingPoint}").AppendLine($" Boiling Point: {boilingPoint}");
+            var stringBuilder = new StringBuilder()
+                         .AppendLine($"Compound :  {new string('-', 7)} {chemical}")
+                         .AppendLine($" Formula : {molecularFormula}")
+                         .AppendLine($" Weight : {molecularWeight}")
+                         .AppendLine($" Melting Point: {meltingPoint}")
+                         .AppendLine($" Boiling Point: {boilingPoint}");
+
             Console.WriteLine(stringBuilder.ToString());
         }
     }
