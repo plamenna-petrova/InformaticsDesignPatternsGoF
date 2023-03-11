@@ -50,7 +50,6 @@ namespace Chemical_Databank
     {
         public float GetCriticalPoint(string compound, string point)
         {
-            // Melting Point
             if (point == "M")
             {
                 switch (compound.ToLower())

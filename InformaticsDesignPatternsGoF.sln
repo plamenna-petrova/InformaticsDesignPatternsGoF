@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Third-Party Billing System"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car Manufacturers", "InformaticsDesignPatternsGoF\Creational\Adapter\Car Manufacturers\Car Manufacturers.csproj", "{CC61F59D-1DCB-4E24-93F7-5776A94A1976}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooking Meat", "InformaticsDesignPatternsGoF\Creational\Adapter\Cooking\Cooking Meat.csproj", "{CEC68A6D-B947-40F1-8471-9D13F6D3B28E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,10 @@ Global
 		{CC61F59D-1DCB-4E24-93F7-5776A94A1976}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC61F59D-1DCB-4E24-93F7-5776A94A1976}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC61F59D-1DCB-4E24-93F7-5776A94A1976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC68A6D-B947-40F1-8471-9D13F6D3B28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC68A6D-B947-40F1-8471-9D13F6D3B28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC68A6D-B947-40F1-8471-9D13F6D3B28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC68A6D-B947-40F1-8471-9D13F6D3B28E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -216,6 +222,7 @@ Global
 		{1378A5B5-CEF9-4A91-8F35-7305C899A9EC} = {DAC70262-FC79-4D9C-9955-8078BF234B64}
 		{95E19EC8-A9EA-4F3C-BCE2-ACF8CD844878} = {DAC70262-FC79-4D9C-9955-8078BF234B64}
 		{CC61F59D-1DCB-4E24-93F7-5776A94A1976} = {DAC70262-FC79-4D9C-9955-8078BF234B64}
+		{CEC68A6D-B947-40F1-8471-9D13F6D3B28E} = {DAC70262-FC79-4D9C-9955-8078BF234B64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
