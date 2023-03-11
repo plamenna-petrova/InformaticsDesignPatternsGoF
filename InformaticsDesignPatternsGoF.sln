@@ -61,29 +61,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Voting Machine", "Informati
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{AADF5917-85FA-480B-A009-8CB0659282C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Adapter\Structural Code\Structural Code.csproj", "{7A93FA6B-423A-4E74-BF2B-45E6C2365A3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Adapter\Structural Code\Structural Code.csproj", "{7A93FA6B-423A-4E74-BF2B-45E6C2365A3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chemical Databank", "InformaticsDesignPatternsGoF\Structural\Adapter\Chemical Databank\Chemical Databank.csproj", "{31A84D09-AAA4-428B-8FB0-017E72A75557}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chemical Databank", "InformaticsDesignPatternsGoF\Structural\Adapter\Chemical Databank\Chemical Databank.csproj", "{31A84D09-AAA4-428B-8FB0-017E72A75557}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Third-Party Billing System", "InformaticsDesignPatternsGoF\Structural\Adapter\Third-Party Billing System\Third-Party Billing System.csproj", "{450FDABA-35B7-48D9-B033-D47DB2072369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Third-Party Billing System", "InformaticsDesignPatternsGoF\Structural\Adapter\Third-Party Billing System\Third-Party Billing System.csproj", "{450FDABA-35B7-48D9-B033-D47DB2072369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car Manufacturers", "InformaticsDesignPatternsGoF\Structural\Adapter\Car Manufacturers\Car Manufacturers.csproj", "{4D5142AA-7112-49BB-822F-64E3DF2A4D38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Car Manufacturers", "InformaticsDesignPatternsGoF\Structural\Adapter\Car Manufacturers\Car Manufacturers.csproj", "{4D5142AA-7112-49BB-822F-64E3DF2A4D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meat Cooking", "InformaticsDesignPatternsGoF\Structural\Adapter\Meat Cooking\Meat Cooking.csproj", "{1353ECC1-FE6D-4B09-BF70-0B7DFF7BF522}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meat Cooking", "InformaticsDesignPatternsGoF\Structural\Adapter\Meat Cooking\Meat Cooking.csproj", "{1353ECC1-FE6D-4B09-BF70-0B7DFF7BF522}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{D4170344-A1BA-4558-B76B-450CA191688D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridge", "Bridge", "{29EC5C44-5A87-41DE-89CE-00475315CFAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sturctural Code", "InformaticsDesignPatternsGoF\Structural\Bridge\Sturctural Code\Sturctural Code.csproj", "{0B8C3AC6-4A8B-4FA7-979F-63CC7C942174}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers", "InformaticsDesignPatternsGoF\Structural\Bridge\Customers\Customers.csproj", "{CFC23C8B-16A3-49A0-9D00-2B188C594A7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers", "InformaticsDesignPatternsGoF\Structural\Bridge\Customers\Customers.csproj", "{CFC23C8B-16A3-49A0-9D00-2B188C594A7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TVs", "InformaticsDesignPatternsGoF\Structural\Bridge\TVs\TVs.csproj", "{14C699BD-384B-4A9C-96CE-DD91F5EB97E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVs", "InformaticsDesignPatternsGoF\Structural\Bridge\TVs\TVs.csproj", "{14C699BD-384B-4A9C-96CE-DD91F5EB97E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Journals", "InformaticsDesignPatternsGoF\Structural\Bridge\Journals\Journals.csproj", "{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journals", "InformaticsDesignPatternsGoF\Structural\Bridge\Journals\Journals.csproj", "{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant Orders", "InformaticsDesignPatternsGoF\Structural\Bridge\Restaurant Orders\Restaurant Orders.csproj", "{FF9BDE16-04FB-4031-8A36-AA0F43AB678E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant Orders", "InformaticsDesignPatternsGoF\Structural\Bridge\Restaurant Orders\Restaurant Orders.csproj", "{FF9BDE16-04FB-4031-8A36-AA0F43AB678E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Bridge\Structural Code\Structural Code.csproj", "{CB2BB302-7478-4D0E-AF45-E41EF34E175B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -199,10 +199,6 @@ Global
 		{1353ECC1-FE6D-4B09-BF70-0B7DFF7BF522}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1353ECC1-FE6D-4B09-BF70-0B7DFF7BF522}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1353ECC1-FE6D-4B09-BF70-0B7DFF7BF522}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B8C3AC6-4A8B-4FA7-979F-63CC7C942174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B8C3AC6-4A8B-4FA7-979F-63CC7C942174}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B8C3AC6-4A8B-4FA7-979F-63CC7C942174}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B8C3AC6-4A8B-4FA7-979F-63CC7C942174}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFC23C8B-16A3-49A0-9D00-2B188C594A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFC23C8B-16A3-49A0-9D00-2B188C594A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFC23C8B-16A3-49A0-9D00-2B188C594A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -219,6 +215,10 @@ Global
 		{FF9BDE16-04FB-4031-8A36-AA0F43AB678E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF9BDE16-04FB-4031-8A36-AA0F43AB678E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF9BDE16-04FB-4031-8A36-AA0F43AB678E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2BB302-7478-4D0E-AF45-E41EF34E175B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2BB302-7478-4D0E-AF45-E41EF34E175B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2BB302-7478-4D0E-AF45-E41EF34E175B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2BB302-7478-4D0E-AF45-E41EF34E175B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -258,11 +258,11 @@ Global
 		{4D5142AA-7112-49BB-822F-64E3DF2A4D38} = {AADF5917-85FA-480B-A009-8CB0659282C2}
 		{1353ECC1-FE6D-4B09-BF70-0B7DFF7BF522} = {AADF5917-85FA-480B-A009-8CB0659282C2}
 		{29EC5C44-5A87-41DE-89CE-00475315CFAA} = {D4170344-A1BA-4558-B76B-450CA191688D}
-		{0B8C3AC6-4A8B-4FA7-979F-63CC7C942174} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 		{CFC23C8B-16A3-49A0-9D00-2B188C594A7D} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 		{14C699BD-384B-4A9C-96CE-DD91F5EB97E4} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 		{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 		{FF9BDE16-04FB-4031-8A36-AA0F43AB678E} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
+		{CB2BB302-7478-4D0E-AF45-E41EF34E175B} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
