@@ -38,7 +38,7 @@ namespace Laptops.Product
             stringBuilder.AppendLine($"SSD Type: {SSDType}");
             stringBuilder.AppendLine($"SSD Capacity: {SSDCapacity} TB");
             stringBuilder.AppendLine($"Extras: ");
-            stringBuilder.AppendLine(string.Join('\n', Extras.Select((e, i) => $"Exta #{i+1}: {e}")));
+            stringBuilder.AppendLine(string.Join('\n', Extras.Select((e, i) => $"Extra #{i+1}: {e}")));
             stringBuilder.AppendLine(new string('-', 40));
             Console.WriteLine(stringBuilder.ToString());
         }
