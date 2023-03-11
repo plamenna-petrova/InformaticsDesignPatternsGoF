@@ -3,12 +3,6 @@ using System.Text;
 
 namespace Cooking
 {
-    public enum TemperatureType
-    {
-        Fahrenheit,
-        Celsius
-    }
-
     public class MeatDatabase
     {
         public float GetSafeCookingTemperature(string meat)
@@ -82,7 +76,7 @@ namespace Cooking
         }
     }
 
-    public class MeatDetails : Meat 
+    public class MeatDetails : Meat
     {
         private MeatDatabase meatDatabase;
 
