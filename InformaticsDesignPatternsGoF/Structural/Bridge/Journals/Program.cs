@@ -75,7 +75,7 @@ namespace Journals
             pages += gap + message;
             Console.Write($"{gap} {new string('=', 7)} {name} \'s' Spacebook {new string('=', 7)}");
             Console.Write(pages);
-            Console.WriteLine($"{gap} {new string('=', 30)}");
+            Console.WriteLine($"{gap} {new string('=', 70)}");
         }
 
         public void DescribeEvent(string friend, string message)
