@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers", "InformaticsDes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVs", "InformaticsDesignPatternsGoF\Structural\Bridge\TVs\TVs.csproj", "{14C699BD-384B-4A9C-96CE-DD91F5EB97E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journals", "InformaticsDesignPatternsGoF\Structural\Bridge\Journals\Journals.csproj", "{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +209,10 @@ Global
 		{14C699BD-384B-4A9C-96CE-DD91F5EB97E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14C699BD-384B-4A9C-96CE-DD91F5EB97E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14C699BD-384B-4A9C-96CE-DD91F5EB97E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -249,6 +255,7 @@ Global
 		{0B8C3AC6-4A8B-4FA7-979F-63CC7C942174} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 		{CFC23C8B-16A3-49A0-9D00-2B188C594A7D} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 		{14C699BD-384B-4A9C-96CE-DD91F5EB97E4} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
+		{CE9B75C5-0E42-4DC5-8481-2C22E2AF2209} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
