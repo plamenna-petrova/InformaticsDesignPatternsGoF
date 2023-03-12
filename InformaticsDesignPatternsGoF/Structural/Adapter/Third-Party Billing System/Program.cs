@@ -1,131 +1,116 @@
 ﻿using System;
-using System.Text;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace Chemical_Databank
+namespace Third_Party_Billing_System
 {
-    public class Compound
+    public class Employee
     {
-        protected float boilingPoint;
-        protected float meltingPoint;
-        protected double molecularWeight;
-        protected string molecularFormula;
+        public int ID { get; set; }
 
-        public virtual void Display()
+        public string Name { get; set; }
+
+        public string Designation { get; set; }
+
+        public decimal Salary { get; set; }
+    }
+
+    public class ThirdPartyBillingSystem
+    {
+        public void ProcessSalary(List<Employee> employeesList)
         {
-            Console.WriteLine("\nCompound: Unknown: -------");
+            foreach (var employee in employeesList)
+            {
+                Console.WriteLine($"Salary: {employee.Salary}, " +
+                    $"Credited to: {employee.Name} with designation: {employee.Designation}");
+            }
         }
     }
 
-    public class RichCompound : Compound
+    public interface ITarget
     {
-        private string chemical;
-        private ChemicalDatabank chemicalDatabank;
-
-        public RichCompound(string chemical)
-        {
-            this.chemical = chemical;
-        }
-
-        public override void Display()
-        {
-            chemicalDatabank = new ChemicalDatabank();
-
-            boilingPoint = chemicalDatabank.GetCriticalPoint(chemical, "B");
-            meltingPoint = chemicalDatabank.GetCriticalPoint(chemical, "M");
-            molecularWeight = chemicalDatabank.GetMolecularWeight(chemical);
-            molecularFormula = chemicalDatabank.GetMolecularStructure(chemical);
-
-            var stringBuilder = new StringBuilder()
-                         .AppendLine($"Compound :  {new string('-', 7)} {chemical}")
-                         .AppendLine($" Formula : {molecularFormula}")
-                         .AppendLine($" Weight : {molecularWeight}")
-                         .AppendLine($" Melting Point: {meltingPoint}")
-                         .AppendLine($" Boiling Point: {boilingPoint}");
-
-            Console.WriteLine(stringBuilder.ToString());
-        }
+        void ProcessCompanySalary(string[,] employeesArray);
     }
 
-    public class ChemicalDatabank
+    public class EmployeeAdapter : ITarget
     {
-        public float GetCriticalPoint(string compound, string point)
-        {
-            if (point == "M")
-            {
-                switch (compound.ToLower())
-                {
-                    case "water":
-                        return 0.0f;
-                    case "benzene":
-                        return 5.5f;
-                    case "ethanol":
-                        return -114.1f;
-                    default:
-                        return 0f;
-                }
-            }
-            else
-            {
-                switch (compound.ToLower())
-                {
-                    case "water":
-                        return 100.0f;
-                    case "benzene":
-                        return 80.1f;
-                    case "ethanol":
-                        return 78.3f;
-                    default:
-                        return 0f;
-                }
-            }
-        }
+        ThirdPartyBillingSystem thirdPartyBillingSystem = new ThirdPartyBillingSystem();
 
-        public string GetMolecularStructure(string compound)
+        public void ProcessCompanySalary(string[,] employeesArray)
         {
-            switch (compound.ToLower())
-            {
-                case "water":
-                    return "H20";
-                case "benzene":
-                    return "C6H6";
-                case "ethanol":
-                    return "C2H50H";
-                default:
-                    return "";
-            }
-        }
+            List<Employee> adaptedEmployees = new List<Employee>();
 
-        public double GetMolecularWeight(string compound)
-        {
-            switch (compound.ToLower())
+            for (int i = 0; i < employeesArray.GetLength(0); i++)
             {
-                case "water":
-                    return 18.015;
-                case "benzene":
-                    return 78.1134;
-                case "ethanol":
-                    return 46.0688;
-                default:
-                    return 0d;
+                Employee employee = new Employee();
+
+                for (int j = 0; j < employeesArray.GetLength(1); j++)
+                {
+                    string employeeDatum = employeesArray[i, j];
+
+                    switch (j)
+                    {
+                        case 0:
+                            employee.ID = int.Parse(employeeDatum);
+                            break;
+                        case 1:
+                            employee.Name = employeeDatum;
+                            break;
+                        case 2:
+                            employee.Designation = employeeDatum;
+                            break;
+                        default:
+                            employee.Salary = decimal.Parse(employeeDatum);
+                            break;
+                    }
+                }
+
+                adaptedEmployees.Add(employee);
             }
+
+            Console.WriteLine("Adapter converted array of employees to a list of employees");
+            Console.WriteLine("Then delegate to the ThirdPartyBillingSystem for processing the employees salary\n");
+            thirdPartyBillingSystem.ProcessSalary(adaptedEmployees);
         }
     }
 
     public class Program
     {
+        // Enter data in the following format:
+
+        // 101 John Engineer 10000
+        // 102 Smith Developer 20000
+        // 103 Dean CEO 30000
+        // 104 Chris Engineer 40000
+        // 105 Sarah Architect 50000
+
+        public static string[,] Fill2DArrayElementsWithRowsAndCols(int rows, int cols)
+        {
+            string[,] twoDimensionalArray = new string[rows, cols];
+
+            for (int row = 0; row < rows; row++)
+            {
+                string[] rowArray = Console.ReadLine().Split().ToArray();
+
+                for (int col = 0; col < cols; col++)
+                {
+                    twoDimensionalArray[row, col] = rowArray[col];
+                }
+            }
+
+            return twoDimensionalArray;
+        }
+
         static void Main(string[] args)
         {
-            Compound unknown = new Compound();
-            unknown.Display();
+            string[,] employees2DDataArray = Fill2DArrayElementsWithRowsAndCols(5, 4);
+            Console.WriteLine();
 
-            Compound water = new RichCompound("Water");
-            water.Display();
-            Compound benzene = new RichCompound("Benzene");
-            benzene.Display();
-            Compound ethanol = new RichCompound("Ethanol");
-            ethanol.Display();
+            ITarget target = new EmployeeAdapter();
+            Console.WriteLine("HR system passes employee string array to Adapter");
+            target.ProcessCompanySalary(employees2DDataArray);
 
-            Console.ReadKey();
+            Console.Read();
         }
     }
 }
