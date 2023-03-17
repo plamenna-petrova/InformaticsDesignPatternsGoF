@@ -89,6 +89,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composite", "Composite", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Composite\Structural Code\Structural Code.csproj", "{FB4774AA-17B5-49DB-A9CA-B5EBDED8B675}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphical Tree Structure", "InformaticsDesignPatternsGoF\Structural\Composite\Graphical Tree Structure\Graphical Tree Structure.csproj", "{57D91BAD-A751-4BCB-9C81-7CECD109C139}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -227,6 +229,10 @@ Global
 		{FB4774AA-17B5-49DB-A9CA-B5EBDED8B675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB4774AA-17B5-49DB-A9CA-B5EBDED8B675}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB4774AA-17B5-49DB-A9CA-B5EBDED8B675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D91BAD-A751-4BCB-9C81-7CECD109C139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D91BAD-A751-4BCB-9C81-7CECD109C139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D91BAD-A751-4BCB-9C81-7CECD109C139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D91BAD-A751-4BCB-9C81-7CECD109C139}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -273,6 +279,7 @@ Global
 		{CB2BB302-7478-4D0E-AF45-E41EF34E175B} = {29EC5C44-5A87-41DE-89CE-00475315CFAA}
 		{5E140BB5-01CD-48DF-BDDB-26AE5D9A5546} = {D4170344-A1BA-4558-B76B-450CA191688D}
 		{FB4774AA-17B5-49DB-A9CA-B5EBDED8B675} = {5E140BB5-01CD-48DF-BDDB-26AE5D9A5546}
+		{57D91BAD-A751-4BCB-9C81-7CECD109C139} = {5E140BB5-01CD-48DF-BDDB-26AE5D9A5546}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
