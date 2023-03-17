@@ -36,13 +36,13 @@ namespace Car_Manufacturers
         {
             XDocument xDocument = new XDocument();
             XElement xElement = new XElement("Manufacturers");
-            IEnumerable<XElement> xAttributes = ManufacturerDataProvider.GetManufacturers()
+            IEnumerable<XElement> xElements = ManufacturerDataProvider.GetManufacturers()
                 .Select(m => new XElement("Manufacturer",
                     new XAttribute("City", m.City),
                     new XAttribute("Name", m.Name),
                     new XAttribute("Year", m.Year)
                  ));
-            xElement.Add(xAttributes);
+            xElement.Add(xElements);
             xDocument.Add(xElement);
 
             Console.WriteLine(xDocument);
@@ -62,7 +62,7 @@ namespace Car_Manufacturers
 
         public void ConvertToJson()
         {
-            var jsonManufacturers = JsonConvert.SerializeObject(manufacturers, Formatting.Indented);
+            string jsonManufacturers = JsonConvert.SerializeObject(manufacturers, Formatting.Indented);
 
             Console.WriteLine("\nPrinting JSON list\n");
             Console.WriteLine(jsonManufacturers);
@@ -85,7 +85,7 @@ namespace Car_Manufacturers
 
         public void ConvertXMLToJson()
         {
-            var manufacturers = xmlConverter.GetXML()
+            IEnumerable<Manufacturer> manufacturers = xmlConverter.GetXML()
                 .Elements("Manufacturers")
                 .Elements("Manufacturer")
                 .Select(m => new Manufacturer

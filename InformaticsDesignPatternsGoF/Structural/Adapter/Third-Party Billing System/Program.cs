@@ -59,7 +59,7 @@ namespace Third_Party_Billing_System
                         case 2:
                             employee.Designation = employeeDatum;
                             break;
-                        default:
+                        case 3:
                             employee.Salary = decimal.Parse(employeeDatum);
                             break;
                     }
