@@ -107,7 +107,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facade", "Facade", "{260E80
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Facade\Structural Code\Structural Code.csproj", "{CDDB809B-6C85-4F47-B0A4-0C3892B534D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage", "InformaticsDesignPatternsGoF\Structural\Facade\Structural Code\Mortgage\Mortgage.csproj", "{FBB7FA2E-F766-4DDC-9ABC-AD52CF7A47DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage", "InformaticsDesignPatternsGoF\Structural\Facade\Mortgage\Mortgage.csproj", "{7352B732-18AA-4693-A128-00C516DD5E9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -275,10 +275,10 @@ Global
 		{CDDB809B-6C85-4F47-B0A4-0C3892B534D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDDB809B-6C85-4F47-B0A4-0C3892B534D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDDB809B-6C85-4F47-B0A4-0C3892B534D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FBB7FA2E-F766-4DDC-9ABC-AD52CF7A47DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FBB7FA2E-F766-4DDC-9ABC-AD52CF7A47DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FBB7FA2E-F766-4DDC-9ABC-AD52CF7A47DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FBB7FA2E-F766-4DDC-9ABC-AD52CF7A47DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7352B732-18AA-4693-A128-00C516DD5E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7352B732-18AA-4693-A128-00C516DD5E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7352B732-18AA-4693-A128-00C516DD5E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7352B732-18AA-4693-A128-00C516DD5E9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -334,7 +334,7 @@ Global
 		{C420A985-0FAA-4BE4-8E1A-A3AA7F7D5B74} = {98C3154D-52BB-44B1-BC11-84C800212174}
 		{260E80DC-E945-40D9-9646-F205A5358DB9} = {D4170344-A1BA-4558-B76B-450CA191688D}
 		{CDDB809B-6C85-4F47-B0A4-0C3892B534D5} = {260E80DC-E945-40D9-9646-F205A5358DB9}
-		{FBB7FA2E-F766-4DDC-9ABC-AD52CF7A47DC} = {260E80DC-E945-40D9-9646-F205A5358DB9}
+		{7352B732-18AA-4693-A128-00C516DD5E9E} = {260E80DC-E945-40D9-9646-F205A5358DB9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
