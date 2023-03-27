@@ -3,47 +3,47 @@ using System.Collections.Generic;
 
 namespace Documents
 {
-    public abstract class Page
+    public abstract class Section
+    {
+        
+    }
+
+    public class SkillsSection: Section
     {
 
     }
 
-    public class SkillsPage: Page
+    public class EducationSection: Section
     {
 
     }
 
-    public class EdutionPage: Page
+    public class ExperienceSection: Section
     {
 
     }
 
-    public class ExperiencePage: Page
+    public class IntroductionSection: Section
     {
 
     }
 
-    public class IntroductionPage: Page
+    public class ResultsSection: Section
     {
 
     }
 
-    public class ResultsPage: Page
+    public class ConclusionSection: Section
     {
 
     }
 
-    public class ConclusionPage: Page
+    public class SummarySection: Section
     {
 
     }
 
-    public class SummaryPage: Page
-    {
-
-    }
-
-    public class BibliographyPage: Page
+    public class BibliographySection: Section
     {
 
     }
@@ -52,33 +52,33 @@ namespace Documents
     {
         public Document()
         {
-            CreatePages();
+            CreateSections();
         }
 
-        public List<Page> Pages { get; private set; } = new List<Page>();
+        public List<Section> Sections { get; private set; } = new List<Section>();
 
-        public abstract void CreatePages();
+        public abstract void CreateSections();
     }
 
     public class Resume: Document
     {
-        public override void CreatePages()
+        public override void CreateSections()
         {
-            Pages.Add(new SkillsPage());
-            Pages.Add(new EdutionPage());
-            Pages.Add(new ExperiencePage());
+            Sections.Add(new SkillsSection());
+            Sections.Add(new EducationSection());
+            Sections.Add(new ExperienceSection());
         }
     }
 
     public class Report: Document
     {
-        public override void CreatePages()
+        public override void CreateSections()
         {
-            Pages.Add(new IntroductionPage());
-            Pages.Add(new ResultsPage());
-            Pages.Add(new ConclusionPage());
-            Pages.Add(new SummaryPage());
-            Pages.Add(new BibliographyPage());
+            Sections.Add(new IntroductionSection());
+            Sections.Add(new ResultsSection());
+            Sections.Add(new ConclusionSection());
+            Sections.Add(new SummarySection());
+            Sections.Add(new BibliographySection());
         }
     }
 
@@ -95,9 +95,9 @@ namespace Documents
             {
                 Console.WriteLine($"\n {document.GetType().Name} --");
 
-                foreach (Page page in document.Pages)
+                foreach (Section section in document.Sections)
                 {
-                    Console.WriteLine($" {page.GetType().Name}");
+                    Console.WriteLine($" {section.GetType().Name}");
                 }
             }
 

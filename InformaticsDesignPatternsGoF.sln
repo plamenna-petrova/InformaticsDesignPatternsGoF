@@ -87,29 +87,45 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "Informat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composite", "Composite", "{5E140BB5-01CD-48DF-BDDB-26AE5D9A5546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Composite\Structural Code\Structural Code.csproj", "{FB4774AA-17B5-49DB-A9CA-B5EBDED8B675}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Composite\Structural Code\Structural Code.csproj", "{FB4774AA-17B5-49DB-A9CA-B5EBDED8B675}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphical Tree Structure", "InformaticsDesignPatternsGoF\Structural\Composite\Graphical Tree Structure\Graphical Tree Structure.csproj", "{57D91BAD-A751-4BCB-9C81-7CECD109C139}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphical Tree Structure", "InformaticsDesignPatternsGoF\Structural\Composite\Graphical Tree Structure\Graphical Tree Structure.csproj", "{57D91BAD-A751-4BCB-9C81-7CECD109C139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Software Company", "InformaticsDesignPatternsGoF\Structural\Composite\Software Company\Software Company.csproj", "{4999FC5A-6A99-42FD-A3E4-336D72D2E1A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Software Company", "InformaticsDesignPatternsGoF\Structural\Composite\Software Company\Software Company.csproj", "{4999FC5A-6A99-42FD-A3E4-336D72D2E1A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Computer", "InformaticsDesignPatternsGoF\Structural\Composite\Computer\Computer.csproj", "{F5D83AF7-F8E2-4292-B317-00180C50A637}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Computer", "InformaticsDesignPatternsGoF\Structural\Composite\Computer\Computer.csproj", "{F5D83AF7-F8E2-4292-B317-00180C50A637}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorator", "Decorator", "{98C3154D-52BB-44B1-BC11-84C800212174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Decorator\Structural Code\Structural Code.csproj", "{5B0D72C4-D9EC-44BC-A3E2-83846E99A45C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Decorator\Structural Code\Structural Code.csproj", "{5B0D72C4-D9EC-44BC-A3E2-83846E99A45C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library For Borrowing", "InformaticsDesignPatternsGoF\Structural\Decorator\Library For Borrowing\Library For Borrowing.csproj", "{854C66E7-066D-40E6-A704-5637B25A9D7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library For Borrowing", "InformaticsDesignPatternsGoF\Structural\Decorator\Library For Borrowing\Library For Borrowing.csproj", "{854C66E7-066D-40E6-A704-5637B25A9D7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "InformaticsDesignPatternsGoF\Structural\Decorator\Cars\Cars.csproj", "{C420A985-0FAA-4BE4-8E1A-A3AA7F7D5B74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cars", "InformaticsDesignPatternsGoF\Structural\Decorator\Cars\Cars.csproj", "{C420A985-0FAA-4BE4-8E1A-A3AA7F7D5B74}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facade", "Facade", "{260E80DC-E945-40D9-9646-F205A5358DB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Facade\Structural Code\Structural Code.csproj", "{CDDB809B-6C85-4F47-B0A4-0C3892B534D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Facade\Structural Code\Structural Code.csproj", "{CDDB809B-6C85-4F47-B0A4-0C3892B534D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage", "InformaticsDesignPatternsGoF\Structural\Facade\Mortgage\Mortgage.csproj", "{7352B732-18AA-4693-A128-00C516DD5E9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mortgage", "InformaticsDesignPatternsGoF\Structural\Facade\Mortgage\Mortgage.csproj", "{7352B732-18AA-4693-A128-00C516DD5E9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "InformaticsDesignPatternsGoF\Structural\Facade\Orders\Orders.csproj", "{A57B75D1-84C6-4060-8835-10F32AD9BD37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "InformaticsDesignPatternsGoF\Structural\Facade\Orders\Orders.csproj", "{A57B75D1-84C6-4060-8835-10F32AD9BD37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flyweight", "Flyweight", "{759F7BC8-4ADA-4341-A0EF-3531903E8D5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Flyweight\Structural Code\Structural Code.csproj", "{DD00F94F-EEF9-4825-BEF6-A8AF1704E74D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Characters", "InformaticsDesignPatternsGoF\Structural\Flyweight\Characters\Characters.csproj", "{24EB0591-AA43-4FD7-A085-8A657E324852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "InformaticsDesignPatternsGoF\Structural\Flyweight\Shapes\Shapes.csproj", "{4B7AE51D-7B28-4CD6-9B6F-B0D6A0F99AA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "InformaticsDesignPatternsGoF\Structural\Flyweight\Cars\Cars.csproj", "{132E6683-FE4B-48B9-A136-21754EA3166D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Proxy\Structural Code\Structural Code.csproj", "{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{B3A7626B-AAD8-41ED-9C39-9A49051A8D38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathProxy", "InformaticsDesignPatternsGoF\Structural\Proxy\MathProxy\MathProxy.csproj", "{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -285,6 +301,30 @@ Global
 		{A57B75D1-84C6-4060-8835-10F32AD9BD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A57B75D1-84C6-4060-8835-10F32AD9BD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A57B75D1-84C6-4060-8835-10F32AD9BD37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD00F94F-EEF9-4825-BEF6-A8AF1704E74D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD00F94F-EEF9-4825-BEF6-A8AF1704E74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD00F94F-EEF9-4825-BEF6-A8AF1704E74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD00F94F-EEF9-4825-BEF6-A8AF1704E74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24EB0591-AA43-4FD7-A085-8A657E324852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EB0591-AA43-4FD7-A085-8A657E324852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EB0591-AA43-4FD7-A085-8A657E324852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EB0591-AA43-4FD7-A085-8A657E324852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7AE51D-7B28-4CD6-9B6F-B0D6A0F99AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7AE51D-7B28-4CD6-9B6F-B0D6A0F99AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7AE51D-7B28-4CD6-9B6F-B0D6A0F99AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7AE51D-7B28-4CD6-9B6F-B0D6A0F99AA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132E6683-FE4B-48B9-A136-21754EA3166D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132E6683-FE4B-48B9-A136-21754EA3166D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132E6683-FE4B-48B9-A136-21754EA3166D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132E6683-FE4B-48B9-A136-21754EA3166D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -342,6 +382,14 @@ Global
 		{CDDB809B-6C85-4F47-B0A4-0C3892B534D5} = {260E80DC-E945-40D9-9646-F205A5358DB9}
 		{7352B732-18AA-4693-A128-00C516DD5E9E} = {260E80DC-E945-40D9-9646-F205A5358DB9}
 		{A57B75D1-84C6-4060-8835-10F32AD9BD37} = {260E80DC-E945-40D9-9646-F205A5358DB9}
+		{759F7BC8-4ADA-4341-A0EF-3531903E8D5B} = {D4170344-A1BA-4558-B76B-450CA191688D}
+		{DD00F94F-EEF9-4825-BEF6-A8AF1704E74D} = {759F7BC8-4ADA-4341-A0EF-3531903E8D5B}
+		{24EB0591-AA43-4FD7-A085-8A657E324852} = {759F7BC8-4ADA-4341-A0EF-3531903E8D5B}
+		{4B7AE51D-7B28-4CD6-9B6F-B0D6A0F99AA9} = {759F7BC8-4ADA-4341-A0EF-3531903E8D5B}
+		{132E6683-FE4B-48B9-A136-21754EA3166D} = {759F7BC8-4ADA-4341-A0EF-3531903E8D5B}
+		{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261} = {B3A7626B-AAD8-41ED-9C39-9A49051A8D38}
+		{B3A7626B-AAD8-41ED-9C39-9A49051A8D38} = {D4170344-A1BA-4558-B76B-450CA191688D}
+		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF} = {B3A7626B-AAD8-41ED-9C39-9A49051A8D38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}

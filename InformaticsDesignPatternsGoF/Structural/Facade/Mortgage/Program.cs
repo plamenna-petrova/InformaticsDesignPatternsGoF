@@ -79,7 +79,8 @@ namespace Mortgage
             Customer customer = new Customer("Ann McKinsey");
             bool isEligibleForMortgage = mortgage.IsEligible(customer, 1250000);
 
-            Console.WriteLine($"\nCustomer {customer.Name} has been {(isEligibleForMortgage ? "Approved" : "Rejected")}");
+            Console.WriteLine($"\nCustomer {customer.Name} has been " +
+                $"{(isEligibleForMortgage ? "Approved" : "Rejected")}");
 
             Console.ReadKey();
         }
