@@ -113,19 +113,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "InformaticsDesign
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flyweight", "Flyweight", "{759F7BC8-4ADA-4341-A0EF-3531903E8D5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Flyweight\Structural Code\Structural Code.csproj", "{DD00F94F-EEF9-4825-BEF6-A8AF1704E74D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Flyweight\Structural Code\Structural Code.csproj", "{DD00F94F-EEF9-4825-BEF6-A8AF1704E74D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Characters", "InformaticsDesignPatternsGoF\Structural\Flyweight\Characters\Characters.csproj", "{24EB0591-AA43-4FD7-A085-8A657E324852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Characters", "InformaticsDesignPatternsGoF\Structural\Flyweight\Characters\Characters.csproj", "{24EB0591-AA43-4FD7-A085-8A657E324852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "InformaticsDesignPatternsGoF\Structural\Flyweight\Shapes\Shapes.csproj", "{4B7AE51D-7B28-4CD6-9B6F-B0D6A0F99AA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes", "InformaticsDesignPatternsGoF\Structural\Flyweight\Shapes\Shapes.csproj", "{4B7AE51D-7B28-4CD6-9B6F-B0D6A0F99AA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "InformaticsDesignPatternsGoF\Structural\Flyweight\Cars\Cars.csproj", "{132E6683-FE4B-48B9-A136-21754EA3166D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cars", "InformaticsDesignPatternsGoF\Structural\Flyweight\Cars\Cars.csproj", "{132E6683-FE4B-48B9-A136-21754EA3166D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Proxy\Structural Code\Structural Code.csproj", "{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Structural\Proxy\Structural Code\Structural Code.csproj", "{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{B3A7626B-AAD8-41ED-9C39-9A49051A8D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathProxy", "InformaticsDesignPatternsGoF\Structural\Proxy\MathProxy\MathProxy.csproj", "{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathProxy", "InformaticsDesignPatternsGoF\Structural\Proxy\MathProxy\MathProxy.csproj", "{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{FB4E398B-6BC2-40EE-AE3B-0B1B1D91C937}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chain Of Responsibility", "Chain Of Responsibility", "{8257D432-45C8-4C45-8C04-72693A2BFF86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralCode", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\StructuralCode\StructuralCode.csproj", "{E17634B9-0931-41D4-8FB0-4C3BCED703B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -325,6 +331,10 @@ Global
 		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17634B9-0931-41D4-8FB0-4C3BCED703B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17634B9-0931-41D4-8FB0-4C3BCED703B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17634B9-0931-41D4-8FB0-4C3BCED703B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17634B9-0931-41D4-8FB0-4C3BCED703B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -390,6 +400,8 @@ Global
 		{2C1018C8-1115-4AB5-B5CC-23A8D8BE0261} = {B3A7626B-AAD8-41ED-9C39-9A49051A8D38}
 		{B3A7626B-AAD8-41ED-9C39-9A49051A8D38} = {D4170344-A1BA-4558-B76B-450CA191688D}
 		{FB8AFE2A-BB6A-4AD8-8D26-A98F2BE6FBEF} = {B3A7626B-AAD8-41ED-9C39-9A49051A8D38}
+		{8257D432-45C8-4C45-8C04-72693A2BFF86} = {FB4E398B-6BC2-40EE-AE3B-0B1B1D91C937}
+		{E17634B9-0931-41D4-8FB0-4C3BCED703B5} = {8257D432-45C8-4C45-8C04-72693A2BFF86}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
