@@ -36,13 +36,13 @@ namespace People_Identification
 
         public override Person ShallowCopy()
         {
-            return this.MemberwiseClone() as Person;
+            return MemberwiseClone() as Person;
         }
 
         public override Person DeepCopy()
         {
-            Person clonedPerson = (Person)this.MemberwiseClone();
-            clonedPerson.IdInfo = new IdInfo(this.IdInfo.IdNumber);
+            Person clonedPerson = (Person) MemberwiseClone();
+            clonedPerson.IdInfo = new IdInfo(IdInfo.IdNumber);
             return clonedPerson;
         }
     }
@@ -61,37 +61,37 @@ namespace People_Identification
     {
         public static void Main(string[] args)
         {
-            Traveller traveller1 = new Traveller(
+            Traveller firstTraveller = new Traveller(
                 42, 
                 Convert.ToDateTime("1977-01-01"), 
                 "Jack Daniels", 
                 new IdInfo(666)
             );
 
-            Traveller traveller2 = traveller1.ShallowCopy() as Traveller;
+            Traveller secondTraveller = firstTraveller.ShallowCopy() as Traveller;
 
-            Traveller traveller3 = traveller1.DeepCopy() as Traveller;
+            Traveller thirdTraveller = firstTraveller.DeepCopy() as Traveller;
 
             Console.WriteLine("Original values of the first, second and third travellers: ");
             Console.WriteLine("Traveller #1 instance values: ");
-            DisplayValues(traveller1);
+            DisplayValues(firstTraveller);
             Console.WriteLine("Traveller #2 instance values: ");
-            DisplayValues(traveller2);
+            DisplayValues(secondTraveller);
             Console.WriteLine("Traveller #3 instance values: ");
-            DisplayValues(traveller3);
+            DisplayValues(thirdTraveller);
 
-            traveller1.Age = 32;
-            traveller1.BirthDate = Convert.ToDateTime("1990-05-06");
-            traveller1.Name = "Frank";
-            traveller1.IdInfo.IdNumber = 7879;
+            firstTraveller.Age = 32;
+            firstTraveller.BirthDate = Convert.ToDateTime("1990-05-06");
+            firstTraveller.Name = "Frank";
+            firstTraveller.IdInfo.IdNumber = 7879;
 
             Console.WriteLine("Values of the first, second and third travellers after applying changes to the first one: ");
             Console.WriteLine("Traveller #1 instance values: ");
-            DisplayValues(traveller1);
+            DisplayValues(firstTraveller);
             Console.WriteLine("Traveller #2 instance values (reference values have changed - shallow copy) :");
-            DisplayValues(traveller2);
+            DisplayValues(secondTraveller);
             Console.WriteLine("Traveller #3 instance values (everything was kept the same - deep copy) : ");
-            DisplayValues(traveller3);
+            DisplayValues(thirdTraveller);
         }
 
         public static void DisplayValues(Person person)

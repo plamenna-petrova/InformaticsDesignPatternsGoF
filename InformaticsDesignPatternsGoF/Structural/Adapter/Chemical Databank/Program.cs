@@ -6,8 +6,11 @@ namespace Chemical_Databank
     public class Compound
     {
         protected float boilingPoint;
+
         protected float meltingPoint;
+
         protected double molecularWeight;
+
         protected string molecularFormula;
 
         public virtual void Display()
@@ -19,6 +22,7 @@ namespace Chemical_Databank
     public class RichCompound : Compound
     {
         private string chemical;
+
         private ChemicalDatabank chemicalDatabank;
 
         public RichCompound(string chemical)
@@ -36,11 +40,11 @@ namespace Chemical_Databank
             molecularFormula = chemicalDatabank.GetMolecularStructure(chemical);
 
             var stringBuilder = new StringBuilder()
-                         .AppendLine($"Compound :  {new string('-', 7)} {chemical}")
-                         .AppendLine($" Formula : {molecularFormula}")
-                         .AppendLine($" Weight : {molecularWeight}")
-                         .AppendLine($" Melting Point: {meltingPoint}")
-                         .AppendLine($" Boiling Point: {boilingPoint}");
+                .AppendLine($"Compound :  {new string('-', 7)} {chemical}")
+                .AppendLine($" Formula : {molecularFormula}")
+                .AppendLine($" Weight : {molecularWeight}")
+                .AppendLine($" Melting Point: {meltingPoint}")
+                .AppendLine($" Boiling Point: {boilingPoint}");
 
             Console.WriteLine(stringBuilder.ToString());
         }

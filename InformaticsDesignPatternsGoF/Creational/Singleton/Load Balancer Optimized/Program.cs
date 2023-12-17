@@ -8,6 +8,7 @@ namespace Load_Balancer_Optimized
         private static readonly LoadBalancer instance = new LoadBalancer();
 
         private readonly List<Server> servers;
+
         private readonly Random random = new Random();
 
         protected LoadBalancer()
@@ -48,21 +49,21 @@ namespace Load_Balancer_Optimized
     {
         static void Main(string[] args)
         {
-            LoadBalancer loadBalancer1 = LoadBalancer.GetLoadBalancer();
-            LoadBalancer loadBalancer2 = LoadBalancer.GetLoadBalancer();
-            LoadBalancer loadBalancer3 = LoadBalancer.GetLoadBalancer();
-            LoadBalancer loadBalancer4 = LoadBalancer.GetLoadBalancer();
+            LoadBalancer firstLoadBalancer = LoadBalancer.GetLoadBalancer();
+            LoadBalancer secondLoadBalancer = LoadBalancer.GetLoadBalancer();
+            LoadBalancer thirdLoadBalancer = LoadBalancer.GetLoadBalancer();
+            LoadBalancer fourthLoadBalancer = LoadBalancer.GetLoadBalancer();
 
-            if (loadBalancer1 == loadBalancer2 && loadBalancer2 == loadBalancer3 && loadBalancer3 == loadBalancer4)
+            if (firstLoadBalancer == secondLoadBalancer && secondLoadBalancer == thirdLoadBalancer && thirdLoadBalancer == fourthLoadBalancer)
             {
                 Console.WriteLine($"Same instance of all load balancers \n");
             }
 
-            LoadBalancer loadBalancer5 = LoadBalancer.GetLoadBalancer();
+            LoadBalancer fifthLoadBalancer = LoadBalancer.GetLoadBalancer();
 
             for (int i = 0; i < 15; i++)
             {
-                string randomServer = loadBalancer5.NextServer.Name;
+                string randomServer = fifthLoadBalancer.NextServer.Name;
                 Console.WriteLine("Dispatch Request to: " + randomServer);
             }
 

@@ -22,10 +22,10 @@ namespace CreditCards
             foreach (var creator in creditCardCreators)
             {
                 Console.WriteLine($"Enter credit card details for type {creator.GetType().Name.Replace("Creator", "")}: ");
-                string creditCardmodel = Console.ReadLine();
+                string creditCardModel = Console.ReadLine();
                 decimal creditCardLimit = decimal.Parse(Console.ReadLine());
                 decimal creditCardAnnualCharge = decimal.Parse(Console.ReadLine());
-                creditCards.Add(creator.CreateCreditCard(creditCardmodel, creditCardLimit, creditCardAnnualCharge));
+                creditCards.Add(creator.CreateCreditCard(creditCardModel, creditCardLimit, creditCardAnnualCharge));
             }
 
             foreach (var creditCard in creditCards)

@@ -37,7 +37,7 @@ namespace Structural_Code
 
         public Flyweight GetFlyweight(string key)
         {
-            return ((Flyweight) flyweights[key]);
+            return flyweights[key];
         }
     }
 

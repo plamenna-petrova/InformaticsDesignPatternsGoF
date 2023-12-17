@@ -31,8 +31,7 @@ namespace Colors
 
     public class ColorManager
     {
-        private Dictionary<string, ColorPrototype> colors =
-            new Dictionary<string, ColorPrototype>();
+        private Dictionary<string, ColorPrototype> colors = new Dictionary<string, ColorPrototype>();
 
         // indexer 
         public ColorPrototype this[string key]
@@ -56,9 +55,9 @@ namespace Colors
             colorManager["peace"] = new Color(128, 211, 128);
             colorManager["flame"] = new Color(211, 34, 20);
 
-            Color color1 = colorManager["red"].Clone() as Color;
-            Color color2 = colorManager["peace"].Clone() as Color;
-            Color color3 = colorManager["flame"].Clone() as Color;
+            Color firstColor = colorManager["red"].Clone() as Color;
+            Color secondColor = colorManager["peace"].Clone() as Color;
+            Color thirdColor = colorManager["flame"].Clone() as Color;
 
             Console.ReadKey();
         }

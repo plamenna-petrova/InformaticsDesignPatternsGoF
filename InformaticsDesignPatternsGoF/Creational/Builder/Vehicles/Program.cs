@@ -11,7 +11,7 @@ namespace Vehicles
 
         //private Dictionary<string, string> vehicleParts = new Dictionary<string, string> 
         //{
-        //    { "frame", "Vehicle Frmae" },
+        //    { "frame", "Vehicle Frame" },
         //    { "engine", "150 cc" },
         //    { "doors", "0" }
         //};
@@ -150,11 +150,9 @@ namespace Vehicles
     {
         static void Main(string[] args)
         {
-            VehicleBuilder vehicleBuilder = null;
-
             Shop shop = new Shop();
+            VehicleBuilder vehicleBuilder = new ScooterBuilder();
 
-            vehicleBuilder = new ScooterBuilder();
             shop.Construct(vehicleBuilder);
             vehicleBuilder.Vehicle.Show();
 

@@ -37,8 +37,11 @@ namespace Structural_Code
     public class Facade
     {
         SubSystemOne subSystemOne;
+
         SubSystemTwo subSystemTwo;
+
         SubSystemThree subSystemThree;
+
         SubSystemFour subSystemFour;
 
         public Facade()

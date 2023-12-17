@@ -55,8 +55,7 @@ namespace Journals
 
     public class DailyJournal : IJournal
     {
-        static SortedList<string, DailyJournal> community =
-            new SortedList<string, DailyJournal>(100);
+        static SortedList<string, DailyJournal> community = new SortedList<string, DailyJournal>(100);
 
         private string pages;
 

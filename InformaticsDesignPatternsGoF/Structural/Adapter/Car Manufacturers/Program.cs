@@ -36,12 +36,14 @@ namespace Car_Manufacturers
         {
             XDocument xDocument = new XDocument();
             XElement xElement = new XElement("Manufacturers");
+
             IEnumerable<XElement> xElements = ManufacturerDataProvider.GetManufacturers()
                 .Select(m => new XElement("Manufacturer",
                     new XAttribute("City", m.City),
                     new XAttribute("Name", m.Name),
                     new XAttribute("Year", m.Year)
                  ));
+
             xElement.Add(xElements);
             xDocument.Add(xElement);
 

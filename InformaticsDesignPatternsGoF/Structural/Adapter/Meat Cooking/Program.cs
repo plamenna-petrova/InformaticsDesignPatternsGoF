@@ -59,11 +59,17 @@ namespace Cooking
     public class Meat
     {
         protected string meatName;
+
         protected double safeCookingTemperatureInFahrenheit;
+
         protected double safeCookingTemperaturInCelsius;
+
         protected double caloriesPerOunce;
+
         protected double caloriesPerGram;
+
         protected double proteinPerOunce;
+
         protected double proteinPerGram;
 
         public Meat(string meatName)

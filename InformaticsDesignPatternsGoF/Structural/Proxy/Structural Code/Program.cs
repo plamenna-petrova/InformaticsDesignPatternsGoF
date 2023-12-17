@@ -18,6 +18,7 @@ namespace Structural_Code
     public class Proxy : Subject
     {
         private RealSubject realSubject;
+
         public override void Request()
         {
             // Use 'lazy initialization'

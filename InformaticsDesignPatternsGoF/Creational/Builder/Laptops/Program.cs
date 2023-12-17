@@ -10,11 +10,9 @@ namespace Laptops
     {
         static void Main(string[] args)
         {
-            LaptopBuilder laptopBuilder = null;
-
             LaptopStore laptopStore = new LaptopStore();
 
-            laptopBuilder = new ASUSConcreteBuilder();
+            LaptopBuilder laptopBuilder = new ASUSConcreteBuilder();
             laptopStore.BuildLaptopConfiguration(laptopBuilder);
             laptopBuilder.Laptop.ShowDetails();
 

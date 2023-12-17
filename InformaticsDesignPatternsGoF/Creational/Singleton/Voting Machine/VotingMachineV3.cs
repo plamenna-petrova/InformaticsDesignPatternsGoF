@@ -10,7 +10,6 @@ namespace Voting_Machine
 
         private int totalVotes = 0;
 
-
         private VotingMachineV3()
         {
 

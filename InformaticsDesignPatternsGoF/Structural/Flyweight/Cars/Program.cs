@@ -11,14 +11,14 @@ namespace Cars
 
         public Flyweight(Car car)
         {
-            this._sharedState = car;
+            _sharedState = car;
         }
 
-        public void Operation(Car uniqueState)
+        public void Operation(Car car)
         {
-            string s = JsonConvert.SerializeObject(this._sharedState);
-            string u = JsonConvert.SerializeObject(uniqueState);
-            Console.WriteLine($"Flyweight: Displaying shared {s} and unique {u} state.");
+            string sharedState = JsonConvert.SerializeObject(_sharedState);
+            string uniqueState = JsonConvert.SerializeObject(car);
+            Console.WriteLine($"Flyweight: Displaying shared {sharedState} and unique {uniqueState} state.");
         }
     }
 
@@ -30,17 +30,18 @@ namespace Cars
         {
             foreach (var agument in args)
             {
-                flyweights.Add(new Tuple<Flyweight, string>(new Flyweight(agument), this.GetKey(agument)));
+                flyweights.Add(new Tuple<Flyweight, string>(new Flyweight(agument), GetKey(agument)));
             }
         }
 
         public string GetKey(Car key)
         {
-            List<string> elements = new List<string>();
-
-            elements.Add(key.Model);
-            elements.Add(key.Color);
-            elements.Add(key.Company);
+            List<string> elements = new List<string>
+            {
+                key.Model,
+                key.Color,
+                key.Company
+            };
 
             if (key.Owner != null && key.Number != null)
             {
@@ -55,24 +56,27 @@ namespace Cars
 
         public Flyweight GetFlyweight(Car sharedState)
         {
-            string key = this.GetKey(sharedState);
+            string key = GetKey(sharedState);
 
             if (flyweights.Where(t => t.Item2 == key).Count() == 0)
             {
                 Console.WriteLine("FlyweightFactory: Can't find a flyweight, creating new one.");
-                this.flyweights.Add(new Tuple<Flyweight, string>(new Flyweight(sharedState), key));
+                flyweights.Add(new Tuple<Flyweight, string>(new Flyweight(sharedState), key));
             }
             else
             {
                 Console.WriteLine("FlyweightFactory: Reusing existing flyweight.");
             }
-            return this.flyweights.Where(t => t.Item2 == key).FirstOrDefault().Item1;
+
+            return flyweights.Where(t => t.Item2 == key).FirstOrDefault().Item1;
         }
 
         public void ListFlyweights()
         {
             var count = flyweights.Count;
+
             Console.WriteLine($"\nFlyweightFactory: I have {count} flyweights:");
+
             foreach (var flyweight in flyweights)
             {
                 Console.WriteLine(flyweight.Item2);
@@ -99,6 +103,7 @@ namespace Cars
         {
             // The client code usually creates a bunch of pre-populated
             // flyweights in the initialization stage of the application.
+
             var factory = new FlyweightFactory(
                 new Car { Company = "Chevrolet", Model = "Camaro2018", Color = "pink" },
                 new Car { Company = "Mercedes Benz", Model = "C300", Color = "black" },
@@ -106,6 +111,7 @@ namespace Cars
                 new Car { Company = "BMW", Model = "M5", Color = "red" },
                 new Car { Company = "BMW", Model = "X6", Color = "white" }
             );
+
             factory.ListFlyweights();
 
             AddCarToPoliceDatabase(factory, new Car

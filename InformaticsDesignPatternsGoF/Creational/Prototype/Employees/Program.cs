@@ -16,8 +16,8 @@ namespace Employees
 
         public void GetDetails()
         {
-            Console.WriteLine($"Employee Details: Name - {this.Name}, " +
-               $"Department - {this.Department}, Address - {this.Address.Name}");
+            Console.WriteLine($"Employee Details: Name - {Name}, " +
+               $"Department - {Department}, Address - {Address.Name}");
         }
     }
 
@@ -25,12 +25,12 @@ namespace Employees
     {
         public override Employee GetShallowCopy()
         {
-            return (Employee) this.MemberwiseClone();
+            return (Employee) MemberwiseClone();
         }
 
         public override Employee GetDeepCopy()
         {
-            Employee clonedEmployee = this.GetShallowCopy();
+            Employee clonedEmployee = GetShallowCopy();
             clonedEmployee.Address = Address.GetClone();
             return clonedEmployee;
         }
@@ -50,23 +50,25 @@ namespace Employees
     {
         static void Main(string[] args)
         {
-            SoftwareDeveloper softwareDeveloper1 = new SoftwareDeveloper();
-            softwareDeveloper1.Name = "John";
-            softwareDeveloper1.Department = "IT";
-            softwareDeveloper1.Address = new Address { Name = "London, UK" };
+            SoftwareDeveloper firstSoftwareDeveloper = new SoftwareDeveloper
+            {
+                Name = "John",
+                Department = "IT",
+                Address = new Address { Name = "London, UK" }
+            };
 
-            SoftwareDeveloper softwareDeveloper2 = (SoftwareDeveloper) softwareDeveloper1.GetShallowCopy();
+            SoftwareDeveloper secondSoftwareDeveloper = (SoftwareDeveloper) firstSoftwareDeveloper.GetShallowCopy();
 
-            SoftwareDeveloper softwareDeveloper3 = (SoftwareDeveloper) softwareDeveloper1.GetDeepCopy();
+            SoftwareDeveloper thirdSoftwareDeveloper = (SoftwareDeveloper) firstSoftwareDeveloper.GetDeepCopy();
 
-            softwareDeveloper2.Name = "James";
-            softwareDeveloper2.Address.Name = "New York, USA";
+            secondSoftwareDeveloper.Name = "James";
+            secondSoftwareDeveloper.Address.Name = "New York, USA";
 
-            softwareDeveloper3.Address.Name = "Barcelona, Spain";
+            thirdSoftwareDeveloper.Address.Name = "Barcelona, Spain";
 
-            softwareDeveloper1.GetDetails();
-            softwareDeveloper2.GetDetails();
-            softwareDeveloper3.GetDetails();
+            firstSoftwareDeveloper.GetDetails();
+            secondSoftwareDeveloper.GetDetails();
+            thirdSoftwareDeveloper.GetDetails();
         }
     }
 }

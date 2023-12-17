@@ -26,10 +26,10 @@ namespace Structural_Code
     {
         static void Main(string[] args)
         {
-            Singleton singleton1 = Singleton.GetInstance();
-            Singleton singleton2 = Singleton.GetInstance();
+            Singleton firstSingletonInstance = Singleton.GetInstance();
+            Singleton secondSingletonInstance = Singleton.GetInstance();
 
-            if (singleton1 == singleton2)
+            if (firstSingletonInstance == secondSingletonInstance)
             {
                 Console.WriteLine("The objects share the same instance");
             }

@@ -85,16 +85,16 @@ namespace Structural_Code
         {
             Director director = new Director();
 
-            Builder builder1 = new ConcreteBuilder1();
-            Builder builder2 = new ConcreteBuilder2();
+            Builder firstBuilder = new ConcreteBuilder1();
+            Builder secondBuilder = new ConcreteBuilder2();
 
-            director.Construct(builder1);
-            Product product1 = builder1.GetResult();
-            product1.Show();
+            director.Construct(firstBuilder);
+            Product firstProduct = firstBuilder.GetResult();
+            firstProduct.Show();
 
-            director.Construct(builder2);
-            Product product2 = builder2.GetResult();
-            product2.Show();
+            director.Construct(secondBuilder);
+            Product secondProduct = secondBuilder.GetResult();
+            secondProduct.Show();
 
             Console.ReadKey();
         }

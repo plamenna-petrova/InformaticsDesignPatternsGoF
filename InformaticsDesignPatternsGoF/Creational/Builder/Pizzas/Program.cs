@@ -158,11 +158,9 @@ namespace Pizzas
     {
         static void Main(string[] args)
         {
-            PizzaBuilder pizzaBuilder = null;
-
             Pizzeria pizzeria = new Pizzeria();
 
-            pizzaBuilder = new Pepperoni();
+            PizzaBuilder pizzaBuilder = new Pepperoni();
             pizzeria.MakePizza(pizzaBuilder);
             pizzaBuilder.Pizza.ShowIngredients();
 
