@@ -22,10 +22,12 @@ namespace Structural_Code
         public override void Request()
         {
             // Use 'lazy initialization'
+
             if (realSubject == null)
             {
                 realSubject = new RealSubject();
             }
+
             realSubject.Request();
         }
     }
