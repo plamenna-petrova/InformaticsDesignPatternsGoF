@@ -82,6 +82,7 @@ namespace StructuralCode
             }
 
             // Wait for user
+
             Console.ReadKey();
         }
     }
