@@ -133,23 +133,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chain Of Responsibility", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructuralCode", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\StructuralCode\StructuralCode.csproj", "{E17634B9-0931-41D4-8FB0-4C3BCED703B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurchaseRequestsApproval", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\PurchaseRequestsApproval\PurchaseRequestsApproval.csproj", "{DC7E58C3-E117-492E-993B-85A440B8954F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurchaseRequestsApproval", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\PurchaseRequestsApproval\PurchaseRequestsApproval.csproj", "{DC7E58C3-E117-492E-993B-85A440B8954F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSupportTickets", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\CustomerSupportTickets\CustomerSupportTickets.csproj", "{4BFEDC3F-CA49-4210-92A0-A21074C5D1DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerSupportTickets", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\CustomerSupportTickets\CustomerSupportTickets.csproj", "{4BFEDC3F-CA49-4210-92A0-A21074C5D1DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareApplicationOperations", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\SoftwareApplicationOperations\SoftwareApplicationOperations.csproj", "{F71D067B-CFB2-4D2A-BE57-80554CBD0C86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftwareApplicationOperations", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\SoftwareApplicationOperations\SoftwareApplicationOperations.csproj", "{F71D067B-CFB2-4D2A-BE57-80554CBD0C86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\Orders\Orders.csproj", "{54621DF6-1984-4BBF-93D9-DFC1E972C96B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\Orders\Orders.csproj", "{54621DF6-1984-4BBF-93D9-DFC1E972C96B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loggers", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\Loggers\Loggers.csproj", "{0C7351E2-B84D-45CF-8CE0-CEF2CEFEF777}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loggers", "InformaticsDesignPatternsGoF\Behavioral\Chain Of Responsibility\Loggers\Loggers.csproj", "{0C7351E2-B84D-45CF-8CE0-CEF2CEFEF777}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Behavioral\Command\Structural Code\Structural Code.csproj", "{15F95822-CF3B-4E52-BF70-6372FDA17359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Behavioral\Command\Structural Code\Structural Code.csproj", "{15F95822-CF3B-4E52-BF70-6372FDA17359}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "InformaticsDesignPatternsGoF\Behavioral\Command\Calculator\Calculator.csproj", "{0B70B380-CDF3-49DA-94F5-F1669A8917EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "InformaticsDesignPatternsGoF\Behavioral\Command\Calculator\Calculator.csproj", "{0B70B380-CDF3-49DA-94F5-F1669A8917EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFoodRestaurant", "InformaticsDesignPatternsGoF\Behavioral\Command\FastFoodRestaurant\FastFoodRestaurant.csproj", "{8F65871A-2750-46AC-A312-CCACED9A7C9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodRestaurant", "InformaticsDesignPatternsGoF\Behavioral\Command\FastFoodRestaurant\FastFoodRestaurant.csproj", "{8F65871A-2750-46AC-A312-CCACED9A7C9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductPrices", "InformaticsDesignPatternsGoF\Behavioral\Command\ProductPrices\ProductPrices.csproj", "{185BE83C-6859-42EB-810A-12F4560D5A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightsSwitch", "InformaticsDesignPatternsGoF\Behavioral\Command\LightsSwitch\LightsSwitch.csproj", "{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -385,6 +389,14 @@ Global
 		{8F65871A-2750-46AC-A312-CCACED9A7C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F65871A-2750-46AC-A312-CCACED9A7C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F65871A-2750-46AC-A312-CCACED9A7C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{185BE83C-6859-42EB-810A-12F4560D5A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185BE83C-6859-42EB-810A-12F4560D5A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185BE83C-6859-42EB-810A-12F4560D5A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185BE83C-6859-42EB-810A-12F4560D5A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -461,6 +473,8 @@ Global
 		{15F95822-CF3B-4E52-BF70-6372FDA17359} = {71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}
 		{0B70B380-CDF3-49DA-94F5-F1669A8917EC} = {71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}
 		{8F65871A-2750-46AC-A312-CCACED9A7C9D} = {71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}
+		{185BE83C-6859-42EB-810A-12F4560D5A21} = {71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}
+		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15} = {71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
