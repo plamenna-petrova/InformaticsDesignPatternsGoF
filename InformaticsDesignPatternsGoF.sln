@@ -151,9 +151,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "InformaticsDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodRestaurant", "InformaticsDesignPatternsGoF\Behavioral\Command\FastFoodRestaurant\FastFoodRestaurant.csproj", "{8F65871A-2750-46AC-A312-CCACED9A7C9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductPrices", "InformaticsDesignPatternsGoF\Behavioral\Command\ProductPrices\ProductPrices.csproj", "{185BE83C-6859-42EB-810A-12F4560D5A21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductPrices", "InformaticsDesignPatternsGoF\Behavioral\Command\ProductPrices\ProductPrices.csproj", "{185BE83C-6859-42EB-810A-12F4560D5A21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightsSwitch", "InformaticsDesignPatternsGoF\Behavioral\Command\LightsSwitch\LightsSwitch.csproj", "{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightsSwitch", "InformaticsDesignPatternsGoF\Behavioral\Command\LightsSwitch\LightsSwitch.csproj", "{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interpreter", "Interpreter", "{38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\Structural Code\Structural Code.csproj", "{46E80051-ED93-4F91-B02C-D8431D2C485B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralToDecimalConversion", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\RomanNumeralToDecimalConversion\RomanNumeralToDecimalConversion.csproj", "{FBBDDBAA-41D5-49F7-A9DB-3C43A7BF1CD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateExpressions", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\DateExpressions\DateExpressions.csproj", "{BFCE8620-E4BF-4D8A-B675-D5AF699E983E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersTranslations", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\NumbersTranslations\NumbersTranslations.csproj", "{568A74FB-92B2-4CCD-9402-F605129F0158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandwichIngredients", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\SandwichIngredients\SandwichIngredients.csproj", "{7B9CFD08-15AA-46F7-B081-B90849299615}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -397,6 +409,26 @@ Global
 		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E80051-ED93-4F91-B02C-D8431D2C485B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E80051-ED93-4F91-B02C-D8431D2C485B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E80051-ED93-4F91-B02C-D8431D2C485B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E80051-ED93-4F91-B02C-D8431D2C485B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBBDDBAA-41D5-49F7-A9DB-3C43A7BF1CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBBDDBAA-41D5-49F7-A9DB-3C43A7BF1CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBBDDBAA-41D5-49F7-A9DB-3C43A7BF1CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBDDBAA-41D5-49F7-A9DB-3C43A7BF1CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFCE8620-E4BF-4D8A-B675-D5AF699E983E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCE8620-E4BF-4D8A-B675-D5AF699E983E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCE8620-E4BF-4D8A-B675-D5AF699E983E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCE8620-E4BF-4D8A-B675-D5AF699E983E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{568A74FB-92B2-4CCD-9402-F605129F0158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{568A74FB-92B2-4CCD-9402-F605129F0158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{568A74FB-92B2-4CCD-9402-F605129F0158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{568A74FB-92B2-4CCD-9402-F605129F0158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B9CFD08-15AA-46F7-B081-B90849299615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B9CFD08-15AA-46F7-B081-B90849299615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B9CFD08-15AA-46F7-B081-B90849299615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B9CFD08-15AA-46F7-B081-B90849299615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -475,6 +507,12 @@ Global
 		{8F65871A-2750-46AC-A312-CCACED9A7C9D} = {71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}
 		{185BE83C-6859-42EB-810A-12F4560D5A21} = {71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}
 		{A1379CAE-0949-4112-8FAC-1FA9BB78CB15} = {71DD4787-1F45-4ED8-8B4A-ED7B3F487FB6}
+		{38A1F98D-F7BF-404F-84DC-F6DADBF6CC13} = {FB4E398B-6BC2-40EE-AE3B-0B1B1D91C937}
+		{46E80051-ED93-4F91-B02C-D8431D2C485B} = {38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}
+		{FBBDDBAA-41D5-49F7-A9DB-3C43A7BF1CD7} = {38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}
+		{BFCE8620-E4BF-4D8A-B675-D5AF699E983E} = {38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}
+		{568A74FB-92B2-4CCD-9402-F605129F0158} = {38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}
+		{7B9CFD08-15AA-46F7-B081-B90849299615} = {38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}
