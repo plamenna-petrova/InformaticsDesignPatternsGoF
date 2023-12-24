@@ -157,15 +157,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightsSwitch", "Informatics
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interpreter", "Interpreter", "{38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural Code", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\Structural Code\Structural Code.csproj", "{46E80051-ED93-4F91-B02C-D8431D2C485B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\Structural Code\Structural Code.csproj", "{46E80051-ED93-4F91-B02C-D8431D2C485B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralToDecimalConversion", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\RomanNumeralToDecimalConversion\RomanNumeralToDecimalConversion.csproj", "{FBBDDBAA-41D5-49F7-A9DB-3C43A7BF1CD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomanNumeralToDecimalConversion", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\RomanNumeralToDecimalConversion\RomanNumeralToDecimalConversion.csproj", "{FBBDDBAA-41D5-49F7-A9DB-3C43A7BF1CD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateExpressions", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\DateExpressions\DateExpressions.csproj", "{BFCE8620-E4BF-4D8A-B675-D5AF699E983E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateExpressions", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\DateExpressions\DateExpressions.csproj", "{BFCE8620-E4BF-4D8A-B675-D5AF699E983E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersTranslations", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\NumbersTranslations\NumbersTranslations.csproj", "{568A74FB-92B2-4CCD-9402-F605129F0158}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumbersTranslations", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\NumbersTranslations\NumbersTranslations.csproj", "{568A74FB-92B2-4CCD-9402-F605129F0158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandwichIngredients", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\SandwichIngredients\SandwichIngredients.csproj", "{7B9CFD08-15AA-46F7-B081-B90849299615}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandwichIngredients", "InformaticsDesignPatternsGoF\Behavioral\Interpreter\SandwichIngredients\SandwichIngredients.csproj", "{7B9CFD08-15AA-46F7-B081-B90849299615}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iterator", "Iterator", "{E76C9DD4-8EC0-4E53-9FC1-705DC21EE9B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural Code", "InformaticsDesignPatternsGoF\Behavioral\Iterator\Structural Code\Structural Code.csproj", "{520EF501-4FDC-4473-94C8-1A57FDF63693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterationWithItemsSkip", "InformaticsDesignPatternsGoF\Behavioral\Iterator\IterationWithItemsSkip\IterationWithItemsSkip.csproj", "{B5F91B71-3A7A-43D2-90CC-E655AB35BF9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountantIterator", "InformaticsDesignPatternsGoF\Behavioral\Iterator\AccountantIterator\AccountantIterator.csproj", "{656A0023-11AA-41E0-BFCB-786907BFFF63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsIterator", "InformaticsDesignPatternsGoF\Behavioral\Iterator\CarsIterator\CarsIterator.csproj", "{1912A366-719F-4E85-A1C0-F639F67ED879}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -429,6 +439,22 @@ Global
 		{7B9CFD08-15AA-46F7-B081-B90849299615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B9CFD08-15AA-46F7-B081-B90849299615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B9CFD08-15AA-46F7-B081-B90849299615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520EF501-4FDC-4473-94C8-1A57FDF63693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520EF501-4FDC-4473-94C8-1A57FDF63693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520EF501-4FDC-4473-94C8-1A57FDF63693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520EF501-4FDC-4473-94C8-1A57FDF63693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F91B71-3A7A-43D2-90CC-E655AB35BF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F91B71-3A7A-43D2-90CC-E655AB35BF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F91B71-3A7A-43D2-90CC-E655AB35BF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F91B71-3A7A-43D2-90CC-E655AB35BF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656A0023-11AA-41E0-BFCB-786907BFFF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656A0023-11AA-41E0-BFCB-786907BFFF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656A0023-11AA-41E0-BFCB-786907BFFF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656A0023-11AA-41E0-BFCB-786907BFFF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1912A366-719F-4E85-A1C0-F639F67ED879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1912A366-719F-4E85-A1C0-F639F67ED879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1912A366-719F-4E85-A1C0-F639F67ED879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1912A366-719F-4E85-A1C0-F639F67ED879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -513,6 +539,11 @@ Global
 		{BFCE8620-E4BF-4D8A-B675-D5AF699E983E} = {38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}
 		{568A74FB-92B2-4CCD-9402-F605129F0158} = {38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}
 		{7B9CFD08-15AA-46F7-B081-B90849299615} = {38A1F98D-F7BF-404F-84DC-F6DADBF6CC13}
+		{E76C9DD4-8EC0-4E53-9FC1-705DC21EE9B7} = {FB4E398B-6BC2-40EE-AE3B-0B1B1D91C937}
+		{520EF501-4FDC-4473-94C8-1A57FDF63693} = {E76C9DD4-8EC0-4E53-9FC1-705DC21EE9B7}
+		{B5F91B71-3A7A-43D2-90CC-E655AB35BF9D} = {E76C9DD4-8EC0-4E53-9FC1-705DC21EE9B7}
+		{656A0023-11AA-41E0-BFCB-786907BFFF63} = {E76C9DD4-8EC0-4E53-9FC1-705DC21EE9B7}
+		{1912A366-719F-4E85-A1C0-F639F67ED879} = {E76C9DD4-8EC0-4E53-9FC1-705DC21EE9B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7382A303-065F-4661-AE7A-A284BFAA876A}

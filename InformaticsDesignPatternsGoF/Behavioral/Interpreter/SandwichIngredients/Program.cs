@@ -132,7 +132,13 @@ namespace SandwichIngredients
 
         private readonly IBread bottomBread;
 
-        public Sandwich(IBread topBread, CondimentsList topCondiments, IngredientsList ingredients, CondimentsList bottomCondiments, IBread bottomBread)
+        public Sandwich(
+            IBread topBread, 
+            CondimentsList topCondiments, 
+            IngredientsList ingredients, 
+            CondimentsList bottomCondiments, 
+            IBread bottomBread
+        )
         {
             this.topBread = topBread;
             this.topCondiments = topCondiments;
