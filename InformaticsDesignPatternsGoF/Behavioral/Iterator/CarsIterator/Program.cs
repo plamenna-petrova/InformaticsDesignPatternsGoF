@@ -285,19 +285,89 @@ namespace CarsIterator
         {
             this.root = root;
             queue = new Queue<Node>();
-
+            Traverse(root);
         }
 
-        public object Current => throw new NotImplementedException();
+        public object Current => currentItem;
+
+        protected abstract void Traverse(Node node);
 
         public bool MoveNext()
         {
-            throw new NotImplementedException();
+            if (queue.Count > 0)
+            {
+                currentItem = queue.Dequeue();
+                return true;
+            }
+
+            return false;
         }
 
         public void Reset()
         {
-            throw new NotImplementedException();
+            queue.Clear();
+            currentItem = null;
+            Traverse(root);
+        }
+    }
+
+    public class PreOrderIterator : BinaryTreeIterator
+    {
+        public PreOrderIterator(Node root) : base(root) 
+        {
+                
+        }
+
+        protected override void Traverse(Node node)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            queue.Enqueue(node);
+            Traverse(node.Left);
+            Traverse(node.Right);
+        }
+    }
+
+    public class InOrderIterator : BinaryTreeIterator
+    {
+        public InOrderIterator(Node root) : base(root)
+        {
+                
+        }
+
+        protected override void Traverse(Node node)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            Traverse(node.Left);
+            queue.Enqueue(node);
+            Traverse(node.Right);
+        }
+    }
+
+    public class PostOrderIterator : BinaryTreeIterator
+    {
+        public PostOrderIterator(Node root) : base(root)
+        {
+                
+        }
+
+        protected override void Traverse(Node node)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            Traverse(node.Left);
+            Traverse(node.Right);
+            queue.Enqueue(node);
         }
     }
 
@@ -335,6 +405,47 @@ namespace CarsIterator
             var carDealer = new CarDealer(ferrari, ford);
 
             carDealer.PrintCars();
+
+            Node root = new Node(25)
+            {
+                Left = new Node(15),
+                Right = new Node(50)
+            };
+
+            root.Left.Left = new Node(10);
+            root.Left.Right = new Node(22);
+            root.Right.Left = new Node(35);
+            root.Right.Right = new Node(70);
+
+            root.Left.Left.Left = new Node(4);
+            root.Left.Left.Right = new Node(12);
+            root.Left.Right.Left = new Node(18);
+            root.Left.Right.Right = new Node(24);
+
+            root.Right.Left.Left = new Node(31);
+            root.Right.Left.Right = new Node(44);
+            root.Right.Right.Left = new Node(66);
+            root.Right.Right.Right = new Node(90);
+
+            PreOrderIterator preOrderIterator = new PreOrderIterator(root);
+            PostOrderIterator postOrderIterator = new PostOrderIterator(root);
+            InOrderIterator inOrderIterator = new InOrderIterator(root);
+
+            IterateTree(preOrderIterator);
+            IterateTree(postOrderIterator);
+            IterateTree(inOrderIterator);
+        }
+
+        private static void IterateTree(BinaryTreeIterator binaryTreeIterator)
+        {
+            var results = new List<int>();
+
+            while (binaryTreeIterator.MoveNext()) 
+            {
+                results.Add((binaryTreeIterator.Current as Node).Value);
+            }
+
+            Console.WriteLine($"{binaryTreeIterator.GetType().Name} results: {string.Join(",", results)}");
         }
     }
 }

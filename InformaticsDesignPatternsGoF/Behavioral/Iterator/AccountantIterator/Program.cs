@@ -21,7 +21,8 @@ namespace AccountantIterator
 
         public bool IsReconciled { get; set; }
 
-        public override string ToString() => $"Name: {Name}\nAmount: {Amount}\nTax Rate: {TaxRate}\nIs Reconciled: {(IsReconciled ? "Yes" : "No")}";
+        public override string ToString() => 
+            $"Name: {Name}\nAmount: {Amount}\nTax Rate: {TaxRate}\nIs Reconciled: {(IsReconciled ? "Yes" : "No")}";
     }
 
     public interface IIterator<T>
@@ -64,7 +65,8 @@ namespace AccountantIterator
             return transaction;
         }
 
-        public bool HasNextItem() => currentTransactionIndex < transactions.Length && transactions[currentTransactionIndex] != null;
+        public bool HasNextItem() => currentTransactionIndex < transactions.Length && 
+            transactions[currentTransactionIndex] != null;
     }
 
     public interface IAccount
