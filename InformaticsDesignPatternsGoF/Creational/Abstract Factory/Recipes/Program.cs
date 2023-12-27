@@ -11,7 +11,7 @@ namespace Recipes
             public abstract Dessert CreateDessert();
         }
 
-        public class AdultCusine : RecipeFactory
+        public class AdultCuisine : RecipeFactory
         {
             public override Sandwich CreateSandwich()
             {
@@ -77,7 +77,7 @@ namespace Recipes
             switch (input)
             {
                 case 'A':
-                    recipeFactory = new AdultCusine();
+                    recipeFactory = new AdultCuisine();
                     break;
                 case 'C':
                     recipeFactory = new KidsCuisine();
