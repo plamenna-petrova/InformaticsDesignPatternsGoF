@@ -28,9 +28,9 @@ namespace Cars
 
         public FlyweightFactory(params Car[] args)
         {
-            foreach (var agument in args)
+            foreach (var argument in args)
             {
-                flyweights.Add(new Tuple<Flyweight, string>(new Flyweight(agument), GetKey(agument)));
+                flyweights.Add(new Tuple<Flyweight, string>(new Flyweight(argument), GetKey(argument)));
             }
         }
 
