@@ -95,15 +95,10 @@ namespace IterationWithItemsSkip
         {
             Collection collectionToIterateOver = new Collection();
 
-            collectionToIterateOver[0] = new Item("Item 0");
-            collectionToIterateOver[1] = new Item("Item 1");
-            collectionToIterateOver[2] = new Item("Item 2");
-            collectionToIterateOver[3] = new Item("Item 3");
-            collectionToIterateOver[4] = new Item("Item 4");
-            collectionToIterateOver[5] = new Item("Item 5");
-            collectionToIterateOver[6] = new Item("Item 6");
-            collectionToIterateOver[7] = new Item("Item 7");
-            collectionToIterateOver[8] = new Item("Item 8");
+            for (int i = 0; i < 8; i++)
+            {
+                collectionToIterateOver[i] = new Item($"Item {i + 1}");
+            }
 
             Iterator iterator = collectionToIterateOver.CreateIterator();
 

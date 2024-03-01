@@ -13,10 +13,7 @@ namespace Structural_Code
 
         public static Singleton GetInstance()
         {
-            if (instance == null)
-            {
-                instance = new Singleton();
-            }
+            instance ??= new Singleton();
 
             return instance;
         }

@@ -9,13 +9,6 @@ namespace Vehicles
 
         private Dictionary<string, string> parts = new Dictionary<string, string>();
 
-        //private Dictionary<string, string> vehicleParts = new Dictionary<string, string> 
-        //{
-        //    { "frame", "Vehicle Frame" },
-        //    { "engine", "150 cc" },
-        //    { "doors", "0" }
-        //};
-
         public Vehicle(string vehicleType)
         {
             this.vehicleType = vehicleType;
@@ -151,6 +144,7 @@ namespace Vehicles
         static void Main(string[] args)
         {
             Shop shop = new Shop();
+
             VehicleBuilder vehicleBuilder = new ScooterBuilder();
 
             shop.Construct(vehicleBuilder);

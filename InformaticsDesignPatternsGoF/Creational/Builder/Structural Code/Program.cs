@@ -1,73 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Channels;
 
 namespace Structural_Code
 {
-    public abstract class Builder
-    {
-        public abstract void BuildPartA();
-        public abstract void BuildPartB();
-        public abstract Product GetResult();
-    }
-
     public class Product
     {
         private List<string> parts = new List<string>();
 
-        public void Add(string part)
-        {
-            parts.Add(part);
-        }
+        public void Add(string part) => parts.Add(part);
 
         public void Show()
         {
             Console.WriteLine($"\nProduct Parts" + new string('-', 10));
-
-            foreach (string part in parts)
-            {
-                Console.WriteLine(part);
-            }
+            parts.ForEach(p => Console.WriteLine(p));
         }
+    }
+
+    public abstract class Builder
+    {
+        public abstract void BuildPartA();
+
+        public abstract void BuildPartB();
+
+        public abstract Product GetResult();
     }
 
     public class ConcreteBuilder1 : Builder
     {
         private Product product = new Product();
 
-        public override void BuildPartA()
-        {
-            product.Add("PartA");
-        }
+        public override void BuildPartA() => product.Add("PartA");
 
-        public override void BuildPartB()
-        {
-            product.Add("PartB");
-        }
+        public override void BuildPartB() => product.Add("PartB");
 
-        public override Product GetResult()
-        {
-            return product;
-        }
+        public override Product GetResult() => product;
     }
 
     public class ConcreteBuilder2: Builder
     {
         private Product product = new Product();
 
-        public override void BuildPartA()
-        {
-            product.Add("PartX");
-        }
+        public override void BuildPartA() => product.Add("PartX");
 
-        public override void BuildPartB()
-        {
-            product.Add("PartY");
-        }
+        public override void BuildPartB() => product.Add("PartY");
 
-        public override Product GetResult()
-        {
-            return product;
-        }
+        public override Product GetResult() => product;
     }
 
     public class Director
