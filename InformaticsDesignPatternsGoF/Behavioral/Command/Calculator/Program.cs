@@ -5,9 +5,9 @@ namespace Calculator
 {
     public class Calculator
     {
-        int currentValue = 0;
+        private int currentValue = 0;
 
-        int oldValue = 0;
+        private int oldValue = 0;
 
         public void ExecuteOperation(char @operator, int operand)
         {
@@ -95,11 +95,11 @@ namespace Calculator
 
     public class User
     {
-        Calculator calculator = new Calculator();
+        private Calculator calculator = new Calculator();
 
-        List<Command> commands = new List<Command>();
+        private List<Command> commands = new List<Command>();
 
-        int currentCommandIndex = 0;
+        private int currentCommandIndex = 0;
 
         public void RedoCommand(int levelsToMoveForward)
         {

@@ -22,7 +22,7 @@ namespace ProductPrices
             Console.WriteLine($"The for the {Name} has been increased by {amount}$.");
         }
 
-        public bool DescreasePrice(double amount)
+        public bool DecreasePrice(double amount)
         {
             if (amount < Price)
             {
@@ -76,20 +76,20 @@ namespace ProductPrices
             }
             else
             {
-                IsCommandExecuted = product.DescreasePrice(amount);
+                IsCommandExecuted = product.DecreasePrice(amount);
             }
         }
 
         public void UndoAction()
         {
-            if (IsCommandExecuted)
+            if (!IsCommandExecuted)
             {
                 return;
             }
 
             if (priceAction == PriceAction.Increase)
             {
-                product.DescreasePrice(amount);
+                product.DecreasePrice(amount);
             }
             else
             {
