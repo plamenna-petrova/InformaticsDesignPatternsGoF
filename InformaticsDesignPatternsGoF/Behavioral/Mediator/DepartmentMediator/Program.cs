@@ -127,6 +127,7 @@ namespace DepartmentMediator
 
             string[] computerSystemsAndTechnologiesSubjects = { "Java", "C#", "Python", "MS SQL" };
             firstStudent.RegisterSubjects(computerSystemsAndTechnologiesSubjects, firstExaminer);
+
             string[] mechanicsSubjects = { "English", "CAD", "Mathematics" };
             thirdStudent.RegisterSubjects(mechanicsSubjects, secondExaminer);
         }
